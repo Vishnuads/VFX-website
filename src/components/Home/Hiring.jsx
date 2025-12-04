@@ -18,13 +18,14 @@ const Hiring = () => {
         { id: 4, name: "logo4", link: L3 },
         { id: 5, name: "logo5", link: L4 },
         { id: 6, name: "logo6", link: L5 },
+        { id: 7, name: "logo7", link: L6 },
 
     ]
 
     return (
         <>
             <section className='text-white py-5 '>
-                <div className="max-w-6xl mx-auto grid md:grid-cols-5 grid-cols-1 space-y-4 text-center">
+                <div className="max-w-6xl mx-auto grid md:grid-cols-5 grid-cols-1 space-y-4 mt-3 text-center">
                     <div className="w-full">
                         <h1 className='md:text-3xl text-xl line-clamp-1 sm:line-clamp-2 '>global vfx studios 
                             hiring our graduates</h1>
@@ -37,7 +38,7 @@ const Hiring = () => {
                                 </div>
                             ))}
                         </Marquee>
-                         <div className="absolute inset-0 bg-linear-to-r from-black via-transparent to-black z-10 "></div>
+                         <div className="absolute inset-0 bg-linear-to-r from-[#141414] via-transparent to-[#141414] z-10 "></div>
                     </div>
                 </div>
 

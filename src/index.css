@@ -1,7 +1,11 @@
 @import "tailwindcss";
 @import "tw-animate-css";
-
 @custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-title: #BCED00;
+  --color-para: #8b8b8b;
+}
 
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);

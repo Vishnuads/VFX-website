@@ -4,8 +4,6 @@ import Logo from "../../assets/images/CFA-logo.png"
 import { CaretDownIcon } from '@phosphor-icons/react'
 import Hamburger from '../ui/Hamburger'
 
-
-
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
 
@@ -20,7 +18,7 @@ const Navbar = () => {
     return (
         <>
             {/* Desktop View */}
-            <div className="w-full bg-black p-5 z-50 fixed top-0 backdrop-blur-sm">
+            <div className="w-full bg-[#141414] p-5 z-50 fixed top-0 backdrop-blur-sm">
                 <div className="flex items-center justify-between max-w-6xl mx-auto    ">
                     <div className="logo">
                         <img src={Logo} alt="cfa logo" className='md:h-9 h-6 w-auto' />

@@ -1,0 +1,48 @@
+import React from 'react'
+
+import { Link } from 'react-router-dom'
+import { ArrowUpRightIcon } from '@phosphor-icons/react'
+
+
+const CourseCard = ({ image,title, desc }) => {
+
+    return (
+        <div>
+            <div className="group">
+                <div className="w-full h-[350px] group-hover:h-[460px] overflow-hidden transition-all duration-400 ease-out relative ">
+                    <img src={image} alt="Courses" className='absolute inset-0 w-full h-full object-cover' />
+                    {/* <img src={C1} alt="Courses" className='absolute inset-0 object-center group-hover:scale-110 transition-all duration-500 ' /> */}
+
+                    <div className='absolute inset-0 bg-title/70 opacity-0 group-hover:opacity-100 group-hover:backdrop-blur-[1px] z-0 transition-all duration-400 ease-out'></div>
+
+                    <div className="absolute top-5 left-0 z-5">
+                        <p className='text-white text-center text-xl px-5 font-semibold group-hover:text-black transition-all duration-400 ease-out' >{title}</p>
+                    </div>
+                    <div className="absolute top-[50%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 text-black w-[75%] my-3 transition-all duration-400 ease-out">
+                        <div className="flex items-center justify-center ">
+                            <ul className='list-disc space-y-1'>
+                                {desc.map((item, index) => (
+                                    <li key={index}>
+                                      <p> {item}</p> 
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div className="absolute bottom-5 left-15 z-5 ">
+                        <Link to="/course">
+                            <button className='cursor-pointer bg-title group-hover:bg-black group-hover:text-title rounded-3xl px-3 py-1 text-[16px] font-medium flex items-center transition-all duration-400 ease-out gap-2'>View Full Course <ArrowUpRightIcon /></button>
+                        </Link>
+                    </div>
+
+                    <div className='absolute inset-0 bg-linear-to-b from-black/60 via-transparent to-black/60
+                    opacity-100 group-hover:opacity-0  z-0'></div>
+                </div>
+            </div>
+
+        </div>
+    )
+}
+
+export default CourseCard

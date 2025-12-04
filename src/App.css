@@ -6,13 +6,20 @@ h1 {
   font-style: normal;
   text-transform: uppercase;
 }
-p, button {
-    font-family: "Onest", sans-serif;
+p,
+button {
+  font-family: "Onest", sans-serif;
+}
+/* 
+.hero {
+  background-image: url("./assets/images/Hero-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+} */
+.footer-li li:hover{
+  color: #bcde00;
+  cursor: pointer;
 }
 
-.hero{
-    background-image: url('./assets/images/Hero-bg.jpg');
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: cover;
-}
+
