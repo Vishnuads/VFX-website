@@ -23,15 +23,15 @@ const Hero = () => {
                         <p className='text-sm sm:text-base md:text-md lg:text-lg mb-4 sm:mb-6'>
                             Learn the full pipeline — VFX + AI + Virtual Production + Motion Capture — from pre-production to final delivery. Train hands-on with live shoots, labs & internship.
                         </p>
-                        <div className='flex gap-5 justify-center'>
+                        <div className='flex gap-5 justify-center items-center'>
                             <Link to="/">
-                                <button className='bg-title border border-title rounded-3xl px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 md:py-3 text-black font-medium text-sm sm:text-base hover:bg-[#a5d400] transition-colors'>
+                                <button className='bg-title border border-title rounded-4xl px-4 sm:px-5 md:px-6 py-2 md:py-3 text-black font-medium text-sm sm:text-base hover:bg-[#a5d400] transition-colors'>
                                     Apply Now
                                 </button>
                             </Link>
                             <a href="">
-                                <button className='text-title border border-title group flex items-center gap-3 rounded-4xl px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 md:py-3  font-medium text-sm sm:text-base hover:bg-title hover:text-black transition-colors'>
-                                    Download Brochure <DownloadSimple size={26} className='group-hover:text-black text-title' weight="fill" />
+                                <button className='text-title border border-title group flex items-center gap-3 rounded-4xl px-4 sm:px-5 md:px-6 py-2 md:py-3  font-medium text-sm sm:text-base hover:bg-title hover:text-black transition-colors'>
+                                    Download Brochure <DownloadSimple size={18} className='group-hover:text-black text-title' weight="fill" />
                                 </button>
                             </a>
                         </div>

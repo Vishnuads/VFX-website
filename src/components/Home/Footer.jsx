@@ -33,7 +33,7 @@ const Footer = () => {
                 </div>
                 <footer className='max-w-6xl mx-auto py-10 px-5 md:px-0'>
                     <div className="grid md:grid-cols-3 grid-cols-1 gap-3">
-                        <div className=''>
+                        <div className='mb-3'>
                             <img src={logo} alt="CFA Logo" className='w-80' />
                         </div>
                         <div >
