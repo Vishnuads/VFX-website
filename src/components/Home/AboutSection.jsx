@@ -17,7 +17,7 @@ const AboutSection = () => {
             <iframe
               // width={520}
               // height={315}
-              className='w-full h-full'
+              className='w-full md:h-full h-[250px]'
               src="https://www.youtube.com/embed/j-C7gtxjRTk?si=O2a2WFem7Du--wG-"
               // title="YouTube video player"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; "

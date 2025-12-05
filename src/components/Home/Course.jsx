@@ -13,6 +13,7 @@ import C3 from '../../assets/images/courses/c3.webp'
 import C4 from '../../assets/images/courses/c4.webp'
 import C5 from '../../assets/images/courses/c5.webp'
 import C6 from '../../assets/images/courses/c6.webp'
+import { ArrowRightIcon } from '@phosphor-icons/react'
 
 const Course = () => {
 
@@ -76,10 +77,12 @@ const Course = () => {
                     <h1 className='text-white text-3xl  md:text-4xl lg:text-5xl xl:text-6xl'> Explore More Creative Programs</h1>
                     <p className='text-para'>Discover specialized courses designed to elevate your skills across VFX, animation, and digital filmmaking.</p>
                 </div>
+                <p className='md:flex justify-end items-center text-para/80 italic hidden w-[94%] my-3 gap-4'>* Swipe <ArrowRightIcon size={20}/></p>
 
                 
                 <div className="my-10 px-0">
                     <p className='text-para/80 text-center italic my-4 md:hidden block'>(* Click to see Course Details)</p>
+                    
                 <Carousel >
                     <CarouselContent className="px-5">
                         {courses.map((course) => (

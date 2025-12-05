@@ -20,9 +20,9 @@ const Navbar = () => {
             {/* Desktop View */}
             <div className="w-full bg-[#141414] p-5 z-50 fixed top-0 backdrop-blur-sm">
                 <div className="flex items-center justify-between max-w-6xl mx-auto    ">
-                    <div className="logo">
+                    <Link to="/" className="logo">
                         <img src={Logo} alt="cfa logo" className='md:h-9 h-6 w-auto' />
-                    </div>
+                    </Link>
 
                     <div className="menu text-white hidden md:block">
                         <div className="flex items-center justify-between gap-5">

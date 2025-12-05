@@ -1,5 +1,7 @@
 import Hero from '@/components/Course/Hero'
 import Overview from '@/components/Course/Overview'
+import RoadMap from '@/components/Course/RoadMap'
+import Who from '@/components/Course/Who'
 import Footer from '@/components/Home/Footer'
 import Navbar from '@/components/Home/Navbar'
 import React from 'react'
@@ -11,6 +13,8 @@ const Course = () => {
                 <Navbar />
                 <Hero />
                 <Overview/>
+                <RoadMap/>
+                <Who/>
                 <Footer />
             </section>
 

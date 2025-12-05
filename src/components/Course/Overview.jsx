@@ -13,7 +13,7 @@ const Overview = () => {
    
     return (
         <>
-            <section className='min-h-screen'>
+            <section className='my-20'>
                 <div className='px-5 text-center mb-10' >
                     <p className='text-title'>Overview</p>
                     <h1 className='text-3xl text-white  md:text-3xl lg:text-4xl xl:text-5xl line-clamp-2 my-2  uppercase'>Program at a Glance</h1>
@@ -31,7 +31,7 @@ const Overview = () => {
                         )
                     })}
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-5 md:max-w-4xl md:mx-auto px-5">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-5 md:max-w-3xl md:mx-auto px-5">
                      {details.slice(3, 5).map((data) => {
                         const IconComponent = data.icon;
                         return (
