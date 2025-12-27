@@ -63,7 +63,7 @@ const Footer = () => {
                             <p className='text-para text-sm my-2'>Sign up to receive program updates, industry insights, job alerts, and exclusive offers from Cinema Factory Academy.</p>
 
                             <div className="flex items-center  gap-3 my-4">
-                                <input type="mail" className='bg-white w-80 py-2 px-4' placeholder='Email' />
+                                <input type="mail" className='bg-white w-[80%] py-2 px-4' placeholder='Email' />
                                 <button className='bg-[#bced00]  px-3 py-2 text-sm sm:text-base font-medium'>Subscribe</button>
                             </div>
 

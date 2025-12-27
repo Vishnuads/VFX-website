@@ -25,16 +25,18 @@ const Hiring = () => {
     return (
         <>
             <section className='text-white py-5 '>
-                <div className="md:max-w-6xl px-5 mx-auto grid md:grid-cols-5 grid-cols-1 space-y-4 mt-3 text-center">
+                <div className="xl:px-20 lg:px-15 md:px-10 px-5   grid md:grid-cols-5 grid-cols-1 space-y-4 mt-3 text-center">
                     <div className="w-full">
-                        <h1 className='md:text-3xl text-xl text-left line-clamp-1 sm:line-clamp-2 '>global vfx studios 
+                        <h1 className='xl:text-3xl lg:text-2xl md:text-xl text-lg text-left hidden md:block'>global vfx studios <br />
                             hiring our graduates</h1>
+                          <h1 className='xl:text-3xl lg:text-2xl md:text-xl text-lg text-left md:hidden block'>global vfx studios 
+                            hiring our graduates</h1>   
                     </div>
                     <div className="logos relative col-span-4 overflow-hidden">
                         <Marquee>
                             {logos.map((logo) => (
                                 <div key={logo.id}  className='z-1 mt-3'>
-                                    <img src={logo.link} alt={logo.name} className='px-7' />
+                                    <img src={logo.link} alt={logo.name} className='px-8' />
                                 </div>
                             ))}
                         </Marquee>

@@ -73,20 +73,19 @@ const Course = () => {
         <>
             <section className='py-10  '>
                 <div className='text-center px-5 '>
-                    <p className='text-title'>COURSES</p>
-                    <h1 className='text-white text-3xl  md:text-4xl lg:text-5xl xl:text-6xl'> Explore More Creative Programs</h1>
-                    <p className='text-para'>Discover specialized courses designed to elevate your skills across VFX, animation, and digital filmmaking.</p>
+                    <p className='text-title font-semibold'>COURSES</p>
+                    <h1 className='text-white text-2xl  md:text-3xl lg:text-4xl xl:text-5xl'> Level Up Your Skills with Our Most In-Demand VFX Programs</h1>
+                    <p className='text-para'>Explore specialised courses designed to prepare you for real studio workflows across VFX, Filmmaking, Animation, and Virtual Production.</p>
                 </div>
                 <p className='md:flex justify-end items-center text-para/80 italic hidden w-[94%] my-3 gap-4'>* Swipe <ArrowRightIcon size={20}/></p>
 
-                
                 <div className="my-10 px-0">
                     <p className='text-para/80 text-center italic my-4 md:hidden block'>(* Click to see Course Details)</p>
-                    
+            
                 <Carousel >
-                    <CarouselContent className="px-5 md:ps-15">
+                    <CarouselContent className="xl:ps-20 lg:ps-15 md:ps-10 ps-5 ">
                         {courses.map((course) => (
-                            <CarouselItem className="md:basis-1/2 lg:basis-1/4 sm:basis-1 gap-3" key={course.id}>
+                            <CarouselItem className="md:basis-1/3 xl:basis-1/5 lg:basis-1/4 sm:basis-1/2 basis-full " key={course.id}>
                                 <CourseCard
                                 image={course.image}
                                     title={course.title}
@@ -96,6 +95,8 @@ const Course = () => {
                         ))}
                     </CarouselContent>
                 </Carousel>
+
+
                 </div>
 
 

@@ -18,7 +18,7 @@ const Navbar = () => {
     return (
         <>
             {/* Desktop View */}
-            <div className="w-full bg-[#141414] p-5 z-50 fixed top-0 backdrop-blur-sm">
+            <div className="w-full bg-[#141414] py-5 xl:px-20 lg:px-15 md:px-10 px-5 z-50 fixed top-0 backdrop-blur-sm">
                 <div className="flex items-center justify-between    ">
                     <Link to="/" className="logo">
                         <img src={Logo} alt="cfa logo" className='md:h-9 h-6 w-auto' />
@@ -35,11 +35,12 @@ const Navbar = () => {
                             <Link to="/">
                                 <p>About Us</p>
                             </Link>
+                            
                         </div>
                     </div>
 
 
-                    <div className="cta">
+                    <div className="cta hidden md:block">
                         <Link to="/">
                             <button className='bg-[#bced00] rounded-3xl px-4 md:px-5 py-1 md:py-2 text-sm sm:text-base font-medium'>Apply Now</button>
                         </Link>
@@ -50,8 +51,8 @@ const Navbar = () => {
                     </div>
                 </div>
 
-                <div className={` md:hidden overflow-hidden text-white flex items-center justify-center transition-all duration-300 ease-in-out  ${isOpen ? "h-35 p-5" : "h-0"}`}>
-                    <div className="space-y-4">
+                <div className={` md:hidden overflow-hidden text-white flex items-center justify-center transition-all duration-300 ease-in-out  ${isOpen ? "h-40 p-8" : "h-0"}`}>
+                    <div className="space-y-4 flex flex-col items-center justify-center">
                         <div>
                             <Link to="/" onClick={closeMenu}>
                                 <p>Home </p>
@@ -67,6 +68,11 @@ const Navbar = () => {
                                 <p>About Us</p>
                             </Link>
                         </div>
+                        <div className="cta">
+                        <Link to="/">
+                            <button className='bg-[#bced00] text-black  rounded-3xl px-4 md:px-5 py-1 md:py-2 text-sm sm:text-base font-medium'>Apply Now</button>
+                        </Link>
+                    </div>
 
                     </div>
                 </div>
