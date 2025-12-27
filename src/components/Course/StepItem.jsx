@@ -2,15 +2,15 @@ import { CaretUpIcon } from '@phosphor-icons/react';
 import React, { useState } from 'react';
 
 
-const StepItem = ({ step, title, details, image }) => {
-    const [isOpen, setIsOpen] = useState(false);
+const StepItem = ({ step, title, details, image, toggle, isOpen }) => {
+ 
 
     return (
         <div className={`bg-cover bg-center bg-no-repeat h-fit relative ${isOpen ? 'grayscale-0': 'grayscale'} `} style={{backgroundImage: `url(${image}`}}>
             <div className="bg-linear-to-r from-black to-transparent absolute inset-0 z-0"></div>
             <button
                 className="  w-full text-left relative z-10 py-5 px-5 transition-all duration-500 ease-in-out"
-                onClick={() => setIsOpen(!isOpen)}
+                onClick={toggle}
             >
                 <div className={`overflow-hidden  transition-all duration-500 ease-in-out ${isOpen ? 'h-40': 'h-15'} `}>
 

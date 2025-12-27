@@ -13,13 +13,13 @@ const Overview = () => {
    
     return (
         <>
-            <section className='my-20'>
+            <section className='md:my-20 my-10 xl:px-20 lg:px-15 md:px-10 px-5'>
                 <div className='px-5 text-center mb-10' >
-                    <p className='text-title'>Overview</p>
-                    <h1 className='text-3xl text-white  md:text-3xl lg:text-4xl xl:text-5xl line-clamp-2 my-2  uppercase'>Program at a Glance</h1>
+                    <p className='text-title uppercase font-semibold'>Overview</p>
+                    <h1 className=' text-white text-3xl lg:text-4xl xl:text-5xl line-clamp-2 my-2  uppercase'>Program at a Glance</h1>
                     <p className='text-para '>A complete filmmaking + VFX education transforming beginners into job-ready artists</p>
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:max-w-6xl md:mx-auto   my-5 px-5">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 my-5 ">
                       {details.slice(0, 3).map((data) => {
                         const IconComponent = data.icon;
                         return (
@@ -31,7 +31,7 @@ const Overview = () => {
                         )
                     })}
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-5 md:max-w-3xl md:mx-auto px-5">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-5 ">
                      {details.slice(3, 5).map((data) => {
                         const IconComponent = data.icon;
                         return (

@@ -7,7 +7,7 @@ h1 {
   text-transform: uppercase;
 }
 p,
-button {
+button, label, input {
   font-family: "Onest", sans-serif;
 }
 /* 

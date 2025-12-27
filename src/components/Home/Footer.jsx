@@ -18,13 +18,17 @@ const Footer = () => {
         <>
             <section className='bg-[#141414]'>
                 <div className="films">
+                    <Marquee>
                     <div className='flex items-center overflow-hidden'>
+                        {/* <Marquee> */}
                         {images.map((img, index) => (
-                            <div key={index} className='w-100 h-60'>
+                            <div key={index} className='w-40 h-60'>
                                 <img src={img} alt="Flims " className='w-100 h-60 object-cover' />
                             </div>
                         ))}
+                        {/* </Marquee> */}
                     </div>
+                    </Marquee>
                 </div>
                 <div className="tag bg-title ">
                     <div className='max-w-6xl mx-auto px-5 md:px-0'>

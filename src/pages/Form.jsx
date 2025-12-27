@@ -1,0 +1,114 @@
+import Footer from "@/components/Home/Footer";
+import Navbar from "@/components/Home/Navbar";
+import React, { useState } from "react";
+
+const Form = () => {
+    const [background, setBackground] = useState("Student");
+
+    const options = [
+        "Student",
+        "Working Professional",
+        "Beginner",
+        "Film / Media Background",
+    ];
+
+    return (
+        <>
+            <Navbar />
+
+            <section className="relative bg-black py-24 overflow-hidden xl:px-20 lg:px-15 md:px-10 px-5">
+                {/* Background Glow */}
+                <div className="absolute -top-40 -left-40 w-[500px] h-[500px] bg-lime-400/20 blur-[160px]" />
+                <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-lime-400/10 blur-[160px]" />
+                <div className='text-center px-5 my-10'>
+                    <p className='text-title font-semibold uppercase'>Kick start you vfx career</p>
+                    <h1 className='text-white text-3xl lg:text-4xl xl:text-5xl'>Talk to a VFX Career Advisor</h1>
+                    <p className='text-para'>Get personalized guidance on the right VFX path, skills, and next steps.</p>
+                </div>
+
+                <div className="relative px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+                    {/* LEFT CARD */}
+                    <div className="relative rounded-3xl overflow-hidden h-full">
+                        <div className="absolute inset-0 bg-gradient-to-br from-lime-300 via-lime-500 to-black" />
+                        <div className="absolute inset-0 bg-black/50" />
+
+                        <div className="relative h-full flex items-end p-10">
+                            <h2 className="text-4xl lg:text-5xl font-bold text-white leading-tight">
+                                Your Vision. <br />
+                                Your Skills. <br />
+                                <span className="text-white/70">Your VFX Career.</span>
+                            </h2>
+                        </div>
+                    </div>
+
+                    <div>
+                        <form className="space-y-3">
+                            {/* Input */}
+                            <div>
+                                <label className="text-sm text-white mb-2 block">Full Name</label>
+                                <input
+                                    type="text"
+                                    placeholder="Enter your name"
+                                    className="w-full rounded-xl bg-[#2a2a2a] px-5 py-3 text-white placeholder:text-gray-500 outline-none focus:ring-2 focus:ring-title"
+                                />
+                            </div>
+
+                            <div>
+                                <label className="text-sm text-white mb-2 block">Mobile Number</label>
+                                <input
+                                    type="tel"
+                                    placeholder="Enter your phone number"
+                                    className="w-full rounded-xl bg-[#2a2a2a] px-5 py-3 text-white placeholder:text-gray-500 outline-none focus:ring-2 focus:ring-title"
+                                />
+                            </div>
+
+                            <div>
+                                <label className="text-sm text-white mb-2 block">Email Address</label>
+                                <input
+                                    type="email"
+                                    placeholder="Enter your email"
+                                    className="w-full rounded-xl bg-[#2a2a2a] px-5 py-3 text-white placeholder:text-gray-500 outline-none focus:ring-2 focus:ring-title"
+                                />
+                            </div>
+
+                            {/* Background Selector */}
+                            <div>
+                                <label className="text-sm text-white mb-3 block">Your Background</label>
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                    {options.map((item) => (
+                                        <button
+                                            type="button"
+                                            key={item}
+                                            onClick={() => setBackground(item)}
+                                            className={`rounded-xl relative overflow-hidden px-4 py-3 text-sm bg-[#2a2a2a] transition-all duration-100 ${background === item
+                                                ? "border-title border text-title font-semibold"
+                                                : " text-gray-400"
+                                                }`}
+                                        >
+                                            {item}
+                                            {background === item && 
+                                            <div className="absolute -top-5 -right-3 bg-title w-10 h-10 rounded-full blur-lg"></div>}
+                                        </button>
+                                    ))}
+                                </div>
+                            </div>
+
+                            {/* CTA */}
+                            <button
+                                type="submit"
+                                className="w-full mt-4 rounded-xl bg-title py-4 text-black font-bold hover:bg-lime-600 transition-all duration-300"
+                            >
+                                Book Free Career Consultation
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <Footer />
+        </>
+    );
+};
+
+export default Form;

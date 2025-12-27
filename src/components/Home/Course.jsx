@@ -74,7 +74,7 @@ const Course = () => {
             <section className='py-10  '>
                 <div className='text-center px-5 '>
                     <p className='text-title font-semibold'>COURSES</p>
-                    <h1 className='text-white text-2xl  md:text-3xl lg:text-4xl xl:text-5xl'> Level Up Your Skills with Our Most In-Demand VFX Programs</h1>
+                    <h1 className='text-white text-3xl lg:text-4xl xl:text-5xl'> Level Up Your Skills with Our Most In-Demand VFX Programs</h1>
                     <p className='text-para'>Explore specialised courses designed to prepare you for real studio workflows across VFX, Filmmaking, Animation, and Virtual Production.</p>
                 </div>
                 <p className='md:flex justify-end items-center text-para/80 italic hidden w-[94%] my-3 gap-4'>* Swipe <ArrowRightIcon size={20}/></p>

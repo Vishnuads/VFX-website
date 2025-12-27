@@ -32,17 +32,17 @@ const Navbar = () => {
                             <Link to="/">
                                 <p className="flex items-center gap-1">Programs <CaretDownIcon size={20} /></p>
                             </Link>
-                            <Link to="/">
+                            {/* <Link to="/">
                                 <p>About Us</p>
-                            </Link>
+                            </Link> */}
                             
                         </div>
                     </div>
 
 
                     <div className="cta hidden md:block">
-                        <Link to="/">
-                            <button className='bg-[#bced00] rounded-3xl px-4 md:px-5 py-1 md:py-2 text-sm sm:text-base font-medium'>Apply Now</button>
+                        <Link to="/apply">
+                            <button className='bg-[#bced00] shadow-[0px_0px_10px_1px] shadow-title/70 rounded-3xl px-4 md:px-5 py-1 md:py-2 text-sm sm:text-base font-medium'>Apply Now</button>
                         </Link>
                     </div>
 
@@ -51,7 +51,7 @@ const Navbar = () => {
                     </div>
                 </div>
 
-                <div className={` md:hidden overflow-hidden text-white flex items-center justify-center transition-all duration-300 ease-in-out  ${isOpen ? "h-40 p-8" : "h-0"}`}>
+                <div className={` md:hidden overflow-hidden text-white flex items-center justify-center transition-all duration-300 ease-in-out  ${isOpen ? "h-46 " : "h-0"}`}>
                     <div className="space-y-4 flex flex-col items-center justify-center">
                         <div>
                             <Link to="/" onClick={closeMenu}>
@@ -63,14 +63,14 @@ const Navbar = () => {
                                 <p className="flex items-center gap-1">Program <CaretDownIcon size={20} /></p>
                             </Link>
                         </div>
-                        <div>
+                        {/* <div>
                             <Link to="/" onClick={closeMenu}>
                                 <p>About Us</p>
                             </Link>
-                        </div>
+                        </div> */}
                         <div className="cta">
-                        <Link to="/">
-                            <button className='bg-[#bced00] text-black  rounded-3xl px-4 md:px-5 py-1 md:py-2 text-sm sm:text-base font-medium'>Apply Now</button>
+                        <Link to="/apply">
+                            <button className='bg-[#bced00] shadow-[0px_0px_40px_5px] shadow-title text-black  rounded-3xl px-5 py-2 text-sm sm:text-base font-medium'>Apply Now</button>
                         </Link>
                     </div>
 
