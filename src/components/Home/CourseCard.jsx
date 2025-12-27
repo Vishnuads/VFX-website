@@ -29,13 +29,13 @@ const CourseCard = ({ image, title, desc }) => {
                         </div>
                     </div>
 
-                    <div className="absolute bottom-5 inset-x-0 z-20 flex justify-center ">
+                    <div className="absolute bottom-4 inset-x-0 z-20 flex justify-center ">
                         <Link to="/course">
                             <button className='cursor-pointer bg-title group-hover:bg-black group-hover:text-title rounded-3xl px-4 py-2 flex items-center transition-all duration-400 ease-in-out gap-2'>View Full Course <ArrowUpRightIcon /></button>
                         </Link>
                     </div>
 
-                    <div className='absolute inset-0 bg-linear-to-b from-black/60 via-transparent to-black/60
+                    <div className='absolute inset-0 bg-linear-to-b from-black via-transparent to-black
                     opacity-100 group-hover:opacity-0  z-0'></div>
                 </div>
             </div>

@@ -85,7 +85,7 @@ const Course = () => {
                 <Carousel >
                     <CarouselContent className="xl:ps-20 lg:ps-15 md:ps-10 ps-5 ">
                         {courses.map((course) => (
-                            <CarouselItem className="md:basis-1/3 xl:basis-1/5 lg:basis-1/4 sm:basis-1/2 basis-full " key={course.id}>
+                            <CarouselItem className="md:basis-1/3  lg:basis-1/4 sm:basis-1/2 basis-full " key={course.id}>
                                 <CourseCard
                                 image={course.image}
                                     title={course.title}
