@@ -71,7 +71,7 @@ const Course = () => {
 
     return (
         <>
-            <section className='py-10 '>
+            <section className='py-10  '>
                 <div className='text-center px-5 '>
                     <p className='text-title'>COURSES</p>
                     <h1 className='text-white text-3xl  md:text-4xl lg:text-5xl xl:text-6xl'> Explore More Creative Programs</h1>
@@ -84,9 +84,9 @@ const Course = () => {
                     <p className='text-para/80 text-center italic my-4 md:hidden block'>(* Click to see Course Details)</p>
                     
                 <Carousel >
-                    <CarouselContent className="px-5">
+                    <CarouselContent className="px-5 md:ps-15">
                         {courses.map((course) => (
-                            <CarouselItem className="md:basis-1/2 lg:basis-1/4 sm:basis-1 gap-5" key={course.id}>
+                            <CarouselItem className="md:basis-1/2 lg:basis-1/4 sm:basis-1 gap-3" key={course.id}>
                                 <CourseCard
                                 image={course.image}
                                     title={course.title}

@@ -25,9 +25,9 @@ const Hiring = () => {
     return (
         <>
             <section className='text-white py-5 '>
-                <div className="max-w-6xl mx-auto grid md:grid-cols-5 grid-cols-1 space-y-4 mt-3 text-center">
+                <div className="md:max-w-6xl px-5 mx-auto grid md:grid-cols-5 grid-cols-1 space-y-4 mt-3 text-center">
                     <div className="w-full">
-                        <h1 className='md:text-3xl text-xl line-clamp-1 sm:line-clamp-2 '>global vfx studios 
+                        <h1 className='md:text-3xl text-xl text-left line-clamp-1 sm:line-clamp-2 '>global vfx studios 
                             hiring our graduates</h1>
                     </div>
                     <div className="logos relative col-span-4 overflow-hidden">

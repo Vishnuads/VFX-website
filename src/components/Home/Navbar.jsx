@@ -19,7 +19,7 @@ const Navbar = () => {
         <>
             {/* Desktop View */}
             <div className="w-full bg-[#141414] p-5 z-50 fixed top-0 backdrop-blur-sm">
-                <div className="flex items-center justify-between max-w-6xl mx-auto    ">
+                <div className="flex items-center justify-between    ">
                     <Link to="/" className="logo">
                         <img src={Logo} alt="cfa logo" className='md:h-9 h-6 w-auto' />
                     </Link>
@@ -41,7 +41,7 @@ const Navbar = () => {
 
                     <div className="cta">
                         <Link to="/">
-                            <button className='bg-[#bced00] rounded-3xl px-3 py-1 text-sm sm:text-base font-medium'>Apply Now</button>
+                            <button className='bg-[#bced00] rounded-3xl px-4 md:px-5 py-1 md:py-2 text-sm sm:text-base font-medium'>Apply Now</button>
                         </Link>
                     </div>
 

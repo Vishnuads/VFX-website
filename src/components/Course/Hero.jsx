@@ -25,12 +25,12 @@ const Hero = () => {
                         </p>
                         <div className='flex gap-5 justify-center items-center'>
                             <Link to="/">
-                                <button className='bg-title border border-title rounded-4xl px-4 sm:px-5 md:px-6 py-2 md:py-3 text-black font-medium text-sm sm:text-base hover:bg-[#a5d400] transition-colors'>
+                                <button className='bg-title border border-title rounded-4xl px-4 sm:px-5 md:px-6 py-1 md:py-2 text-black font-medium text-sm sm:text-base hover:bg-[#a5d400] transition-colors'>
                                     Apply Now
                                 </button>
                             </Link>
                             <a href="">
-                                <button className='text-title border border-title group flex items-center gap-3 rounded-4xl px-4 sm:px-5 md:px-6 py-2 md:py-3  font-medium text-sm sm:text-base hover:bg-title hover:text-black transition-colors'>
+                                <button className='text-title border border-title group flex items-center gap-3 rounded-4xl px-4  md:px-5 py-1 md:py-2  font-medium text-sm sm:text-base hover:bg-title hover:text-black transition-colors'>
                                     Download Brochure <DownloadSimple size={18} className='group-hover:text-black text-title' weight="fill" />
                                 </button>
                             </a>

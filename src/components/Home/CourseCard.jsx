@@ -1,10 +1,9 @@
 import React from 'react'
-
 import { Link } from 'react-router-dom'
 import { ArrowUpRightIcon } from '@phosphor-icons/react'
 
 
-const CourseCard = ({ image,title, desc }) => {
+const CourseCard = ({ image, title, desc }) => {
 
     return (
         <div>
@@ -13,7 +12,7 @@ const CourseCard = ({ image,title, desc }) => {
                     <img src={image} alt="Courses" className='absolute inset-0 w-full h-full object-cover' />
                     {/* <img src={C1} alt="Courses" className='absolute inset-0 object-center group-hover:scale-110 transition-all duration-500 ' /> */}
 
-                    <div className='absolute inset-0 bg-title/70 opacity-0 group-hover:opacity-100 group-hover:backdrop-blur-[1px] z-0 transition-all duration-400 ease-in-out'></div>
+                    <div className='absolute inset-0 bg-title/70 opacity-0 group-hover:opacity-100 group-hover:backdrop-blur-[2px] z-0 transition-all duration-400 ease-in-out'></div>
 
                     <div className="absolute top-5 left-0 z-5">
                         <p className='text-white text-center text-xl px-5 font-semibold group-hover:text-black transition-all duration-400 ease-in-out' >{title}</p>
@@ -23,7 +22,7 @@ const CourseCard = ({ image,title, desc }) => {
                             <ul className='list-disc space-y-1'>
                                 {desc.map((item, index) => (
                                     <li key={index}>
-                                      <p> {item}</p> 
+                                        <p> {item}</p>
                                     </li>
                                 ))}
                             </ul>

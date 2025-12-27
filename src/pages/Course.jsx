@@ -1,6 +1,8 @@
 import Hero from '@/components/Course/Hero'
 import Overview from '@/components/Course/Overview'
 import RoadMap from '@/components/Course/RoadMap'
+import Timeline from '@/components/Course/Timeline'
+import What from '@/components/Course/What'
 import Who from '@/components/Course/Who'
 import Footer from '@/components/Home/Footer'
 import Navbar from '@/components/Home/Navbar'
@@ -14,7 +16,9 @@ const Course = () => {
                 <Hero />
                 <Overview/>
                 <RoadMap/>
-                <Who/>
+                <Timeline/>
+                <What/>
+                {/* <Who/> */}
                 <Footer />
             </section>
 
