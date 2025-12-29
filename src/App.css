@@ -7,9 +7,10 @@ h1 {
   text-transform: uppercase;
 }
 p,
-button, label, input {
-  font-family: "Onest", sans-serif;
-}
+button, label, input, select, option {
+  font-family: "Onest", sans-serif;}
+
+
 /* 
 .hero {
   background-image: url("./assets/images/Hero-bg.jpg");

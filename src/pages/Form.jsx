@@ -16,7 +16,7 @@ const Form = () => {
         <>
             <Navbar />
 
-            <section className="relative bg-black py-24 overflow-hidden xl:px-20 lg:px-15 md:px-10 px-5">
+            <section className="relative bg-[#141414] py-24 overflow-hidden xl:px-20 lg:px-15 md:px-10 px-5">
                 {/* Background Glow */}
                 <div className="absolute -top-40 -left-40 w-[500px] h-[500px] bg-lime-400/20 blur-[160px]" />
                 <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-lime-400/10 blur-[160px]" />
@@ -30,14 +30,14 @@ const Form = () => {
 
                     {/* LEFT CARD */}
                     <div className="relative rounded-3xl overflow-hidden h-full">
-                        <div className="absolute inset-0 bg-gradient-to-br from-lime-300 via-lime-500 to-black" />
+                        <div className="absolute inset-0 bg-linear-to-br from-title/80 via-title to-black" />
                         <div className="absolute inset-0 bg-black/50" />
 
                         <div className="relative h-full flex items-end p-10">
-                            <h2 className="text-4xl lg:text-5xl font-bold text-white leading-tight">
+                            <h2 className="md:text-4xl text-3xl lg:text-5xl font-bold text-white leading-tight">
                                 Your Vision. <br />
                                 Your Skills. <br />
-                                <span className="text-white/70">Your VFX Career.</span>
+                                <span className="text-white/80">Your VFX Career.</span>
                             </h2>
                         </div>
                     </div>
@@ -50,7 +50,7 @@ const Form = () => {
                                 <input
                                     type="text"
                                     placeholder="Enter your name"
-                                    className="w-full rounded-xl bg-[#2a2a2a] px-5 py-3 text-white placeholder:text-gray-500 outline-none focus:ring-2 focus:ring-title"
+                                    className="w-full rounded-xl bg-[#2a2a2a] px-5 py-3 text-white placeholder:text-gray-500 outline-none focus:ring focus:ring-title"
                                 />
                             </div>
 
@@ -59,7 +59,7 @@ const Form = () => {
                                 <input
                                     type="tel"
                                     placeholder="Enter your phone number"
-                                    className="w-full rounded-xl bg-[#2a2a2a] px-5 py-3 text-white placeholder:text-gray-500 outline-none focus:ring-2 focus:ring-title"
+                                    className="w-full rounded-xl bg-[#2a2a2a] px-5 py-3 text-white placeholder:text-gray-500 outline-none focus:ring focus:ring-title"
                                 />
                             </div>
 
@@ -68,7 +68,7 @@ const Form = () => {
                                 <input
                                     type="email"
                                     placeholder="Enter your email"
-                                    className="w-full rounded-xl bg-[#2a2a2a] px-5 py-3 text-white placeholder:text-gray-500 outline-none focus:ring-2 focus:ring-title"
+                                    className="w-full rounded-xl bg-[#2a2a2a] px-5 py-3 text-white placeholder:text-gray-500 outline-none focus:ring focus:ring-title"
                                 />
                             </div>
 
@@ -83,7 +83,7 @@ const Form = () => {
                                             onClick={() => setBackground(item)}
                                             className={`rounded-xl relative overflow-hidden px-4 py-3 text-sm bg-[#2a2a2a] transition-all duration-100 ${background === item
                                                 ? "border-title border text-title font-semibold"
-                                                : " text-gray-400"
+                                                : " text-gray-400 border border-transparent"
                                                 }`}
                                         >
                                             {item}
@@ -97,7 +97,7 @@ const Form = () => {
                             {/* CTA */}
                             <button
                                 type="submit"
-                                className="w-full mt-4 rounded-xl bg-title py-4 text-black font-bold hover:bg-lime-600 transition-all duration-300"
+                                className="w-full mt-4 rounded-xl bg-title py-4 text-black font-bold hover:bg-title/70 cursor-pointer transition-all duration-300"
                             >
                                 Book Free Career Consultation
                             </button>

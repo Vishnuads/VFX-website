@@ -1,25 +1,25 @@
 import React from 'react'
 import Marquee from "react-fast-marquee";
-import L0 from '../../assets/images/hiring/Logo.png'
-import L1 from '../../assets/images/hiring/Logo1.png'
-import L2 from '../../assets/images/hiring/Logo2.png'
-import L3 from '../../assets/images/hiring/Logo3.png'
-import L4 from '../../assets/images/hiring/Logo4.png'
-import L5 from '../../assets/images/hiring/Logo5.png'
-import L6 from '../../assets/images/hiring/Vector.png'
+import L0 from '../../assets/images/hiring/1.png'
+import L1 from '../../assets/images/hiring/15.png'
+import L2 from '../../assets/images/hiring/2.png'
+import L3 from '../../assets/images/hiring/3.png'
+import L4 from '../../assets/images/hiring/4.png'
+import L5 from '../../assets/images/hiring/5.png'
+import L6 from '../../assets/images/hiring/6.png'
+import L7 from '../../assets/images/hiring/7.png'
+import L8 from '../../assets/images/hiring/8.png'
+import L9 from '../../assets/images/hiring/9.png'
+import L10 from '../../assets/images/hiring/10.png'
+import L11 from '../../assets/images/hiring/11.png'
+import L12 from '../../assets/images/hiring/12.png'
+import L13 from '../../assets/images/hiring/13.png'
+import L14 from '../../assets/images/hiring/14.png'
+
 
 const Accredit = () => {
 
-    const logos = [
-        { id: 1, name: "logo1", link: L0 },
-        { id: 2, name: "logo2", link: L1 },
-        { id: 3, name: "logo3", link: L2 },
-        { id: 4, name: "logo4", link: L3 },
-        { id: 5, name: "logo5", link: L4 },
-        { id: 6, name: "logo6", link: L5 },
-        { id: 7, name: "logo7", link: L6 },
-
-    ]
+     const logos = [L0, L1, L2, L3, L4, L5, L6, L7, L8, L9, L10, L11, L12, L13, L14]
 
     return (
         <>
@@ -31,10 +31,10 @@ const Accredit = () => {
                         <p className='text-para my-3 md:w-[70%] w-full mx-auto '>Certified. Trusted. Industry-Approved. At Cinema Factory Academy, our VFX programs are reviewed, validated, and shaped by leading professionals, global studios, and academic partners. Every module is built to meet current industry standards, ensuring students train with workflows, tools, and practices used in today’s top VFX pipelines.</p>
                     </div>
                     <div className="logos relative col-span-4 my-10 ">
-                        <Marquee>
-                            {logos.map((logo) => (
-                                <div key={logo.id} className='z-1 mt-3'>
-                                    <img src={logo.link} alt={logo.name} className='px-7' />
+                         <Marquee>
+                            {logos.map((logo, idx) => (
+                                <div key={idx} className='z-1 mt-3'>
+                                    <img src={logo} alt="Logos" className='w-auto h-14 px-7 ' />
                                 </div>
                             ))}
                         </Marquee>

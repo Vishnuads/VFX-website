@@ -19,7 +19,7 @@ const Course = () => {
 
     const courses = [
         {
-            id: 1, image: C1, title: "Advanced Compositing & CGI Integration", desc: [
+            id: 1, image: C1, title: "One-Year VFX Mastery Program", desc: [
                 "Master the art of combining live-action footage with CGI elements.",
                 "Learn advanced keying, tracking, cleanup, and photoreal integration.",
                 "Work with multi-pass renders, AOVs, and complex Nuke node networks.",
@@ -42,30 +42,30 @@ const Course = () => {
                 "Ideal for those interested in motion design and creative storytelling."
             ]
         },
-          {
-            id: 4, image: C4, title: "Virtual Production & Unreal Engine Pipeline", desc: [
-                "Discover how real-time 3D tools power modern filmmaking.",
-                "Learn Unreal Engine for environments, lighting, and in-camera VFX.",
-                "Train in LED volume workflows and tracking systems.",
-                "Perfect for future virtual production technicians and environment artists."
-            ]
-        },
-          {
-            id: 5, image: C5, title: "Matchmove, Tracking & Camera Solving", desc: [
-                "Understand how to recreate real camera motion in 3D space.",
-                "Work with 2D, planar, and 3D tracking using PFTrack and Syntheyes.",
-                "Solve lenses, match CG to live footage, and prepare shots for CG teams.",
-                "Perfect for roles like Matchmove Artist or Layout Artist."
-            ]
-        },
-          {
-            id: 6, image: C6, title: "Digital Sculpting & Character Creation", desc: [
-                "Dive into the world of 3D character and creature sculpting.",
-                "Learn anatomy, form, detailing, and texturing workflows.",
-                "Create high-resolution models ready for animation and rendering.",
-                "Ideal for students who want to become character or creature artists."
-            ]
-        }
+        //   {
+        //     id: 4, image: C4, title: "Virtual Production & Unreal Engine Pipeline", desc: [
+        //         "Discover how real-time 3D tools power modern filmmaking.",
+        //         "Learn Unreal Engine for environments, lighting, and in-camera VFX.",
+        //         "Train in LED volume workflows and tracking systems.",
+        //         "Perfect for future virtual production technicians and environment artists."
+        //     ]
+        // },
+        //   {
+        //     id: 5, image: C5, title: "Matchmove, Tracking & Camera Solving", desc: [
+        //         "Understand how to recreate real camera motion in 3D space.",
+        //         "Work with 2D, planar, and 3D tracking using PFTrack and Syntheyes.",
+        //         "Solve lenses, match CG to live footage, and prepare shots for CG teams.",
+        //         "Perfect for roles like Matchmove Artist or Layout Artist."
+        //     ]
+        // },
+        //   {
+        //     id: 6, image: C6, title: "Digital Sculpting & Character Creation", desc: [
+        //         "Dive into the world of 3D character and creature sculpting.",
+        //         "Learn anatomy, form, detailing, and texturing workflows.",
+        //         "Create high-resolution models ready for animation and rendering.",
+        //         "Ideal for students who want to become character or creature artists."
+        //     ]
+        // }
 
     ]
 
@@ -83,7 +83,8 @@ const Course = () => {
                     <p className='text-para/80 text-center italic my-4 md:hidden block'>(* Click to see Course Details)</p>
             
                 <Carousel >
-                    <CarouselContent className="xl:ps-20 lg:ps-15 md:ps-10 ps-5 ">
+                    <CarouselContent className="xl:ps-20 lg:ps-15 md:ps-10 ps-5 flex items-center justify-center
+                    ">
                         {courses.map((course) => (
                             <CarouselItem className="md:basis-1/3  lg:basis-1/4 sm:basis-1/2 basis-full " key={course.id}>
                                 <CourseCard

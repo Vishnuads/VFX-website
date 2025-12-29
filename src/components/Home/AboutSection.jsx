@@ -4,7 +4,7 @@ const AboutSection = () => {
   return (
     <>
       <section className='text-white  flex justify-center items-center xl:py-20 lg:py-15 py-10 '>
-        <div className="grid md:grid-cols-2 grid-cols-1  xl:px-20 lg:px-15 md:px-10 px-5 gap-3">
+        <div className="grid md:grid-cols-2 grid-cols-1  xl:px-20 lg:px-15 md:px-10 px-5 gap-5">
           <div className=''>
             <p className='text-[#bcde00] font-semibold'>ABOUT US</p>
             <h1 className='text-3xl lg:text-4xl xl:text-5xl line-clamp-2 my-3 w-fit'>PROFESSIONAL VFX TRAINING at

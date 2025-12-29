@@ -16,7 +16,7 @@ const Footer = () => {
     const images = [M1, M2, M3, M4, M5, M6, M7, M8]
     return (
         <>
-            <section className='bg-[#141414]'>
+            <section className='bg-[#141414] '>
                 <div className="films">
                     <Marquee>
                     <div className='flex items-center overflow-hidden'>
@@ -30,12 +30,12 @@ const Footer = () => {
                     </div>
                     </Marquee>
                 </div>
-                <div className="tag bg-title ">
-                    <div className='max-w-6xl mx-auto px-5 md:px-0'>
+                <div className="tag bg-title  xl:px-20 lg:px-15 md:px-10 px-5">
+                    <div className=''>
                         <h1 className='text-black text-2xl md:text-4xl py-5'>credits from cinema factory mentors</h1>
                     </div>
                 </div>
-                <footer className='max-w-6xl mx-auto py-10 px-5 md:px-0'>
+                <footer className='py-7 xl:px-20 lg:px-15 md:px-10 px-5'>
                     <div className="grid md:grid-cols-3 grid-cols-1 gap-3">
                         <div className='mb-3'>
                             <img src={logo} alt="CFA Logo" className='w-80' />

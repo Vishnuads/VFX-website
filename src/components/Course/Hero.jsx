@@ -24,7 +24,7 @@ const Hero = () => {
                             Learn the full pipeline — VFX + AI + Virtual Production + Motion Capture — from pre-production to final delivery. Train hands-on with live shoots, labs & internship.
                         </p>
                         <div className='flex md:gap-5 gap-3 justify-center items-center'>
-                            <Link to="/">
+                            <Link to="/apply">
                                 <button className='bg-title border border-title rounded-4xl px-5  py-2 text-black font-medium text-sm sm:text-base hover:bg-[#a5d400] transition-colors'>
                                     Apply Now
                                 </button>

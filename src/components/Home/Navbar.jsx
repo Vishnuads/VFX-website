@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import Logo from "../../assets/images/CFA-logo.png"
 import { CaretDownIcon } from '@phosphor-icons/react'
 import Hamburger from '../ui/Hamburger'
+import Dropdown from '../ui/DropDown'
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -14,6 +15,10 @@ const Navbar = () => {
     const closeMenu = () => {
         setIsOpen(!isOpen)
     };
+    const programs =[
+        {label: "VFX Mastery", link: "/course"},
+        {label: "Shot Term", link: "/"}
+    ]
 
     return (
         <>
@@ -29,13 +34,12 @@ const Navbar = () => {
                             <Link to="/">
                                 <p>Home </p>
                             </Link>
-                            <Link to="/">
-                                <p className="flex items-center gap-1">Programs <CaretDownIcon size={20} /></p>
-                            </Link>
+                          
+                            <Dropdown title="Programs" items={programs} />
                             {/* <Link to="/">
                                 <p>About Us</p>
                             </Link> */}
-                            
+
                         </div>
                     </div>
 
@@ -51,7 +55,7 @@ const Navbar = () => {
                     </div>
                 </div>
 
-                <div className={` md:hidden overflow-hidden text-white flex items-center justify-center transition-all duration-300 ease-in-out  ${isOpen ? "h-46 " : "h-0"}`}>
+                <div className={` md:hidden overflow-hidden text-white flex items-center justify-center transition-all duration-300 ease-in-out  ${isOpen ? "h-fit p-5" : "h-0"}`}>
                     <div className="space-y-4 flex flex-col items-center justify-center">
                         <div>
                             <Link to="/" onClick={closeMenu}>
@@ -59,9 +63,7 @@ const Navbar = () => {
                             </Link>
                         </div>
                         <div>
-                            <Link to="/" onClick={closeMenu}>
-                                <p className="flex items-center gap-1">Program <CaretDownIcon size={20} /></p>
-                            </Link>
+                           <Dropdown title="Programs" items={programs}  />
                         </div>
                         {/* <div>
                             <Link to="/" onClick={closeMenu}>
@@ -69,10 +71,10 @@ const Navbar = () => {
                             </Link>
                         </div> */}
                         <div className="cta">
-                        <Link to="/apply">
-                            <button className='bg-[#bced00] shadow-[0px_0px_40px_5px] shadow-title text-black  rounded-3xl px-5 py-2 text-sm sm:text-base font-medium'>Apply Now</button>
-                        </Link>
-                    </div>
+                            <Link to="/apply">
+                                <button className='bg-[#bced00] shadow-[0px_0px_10px_2px] shadow-title text-black  rounded-3xl px-5 py-2 text-sm sm:text-base font-medium'>Apply Now</button>
+                            </Link>
+                        </div>
 
                     </div>
                 </div>
