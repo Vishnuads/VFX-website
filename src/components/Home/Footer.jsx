@@ -16,7 +16,7 @@ const Footer = () => {
     const images = [M1, M2, M3, M4, M5, M6, M7, M8]
     return (
         <>
-            <section className='bg-[#141414] '>
+            <section className='bg-[#141414] mt-10'>
                 <div className="films">
                     <Marquee>
                     <div className='flex items-center overflow-hidden'>

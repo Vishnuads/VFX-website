@@ -4,7 +4,7 @@ import { Download } from "lucide-react";
 
 const CTA = () => {
   return (
-    <section className="xl:px-20 lg:px-16 md:px-10 px-5 md:my-20 my-10">
+    <section className="xl:px-20 lg:px-16 md:px-10 px-5 md:my-20 my-15">
       <div className="relative mx-auto md:w-[80%] w-full  h-[240px] md:h-[300px] rounded-3xl overflow-hidden">
         
         {/* Background Image */}

@@ -7,7 +7,7 @@ const Dropdown = ({ title, items }) => {
 
   return (
     <div
-      className="relative w-full md:w-auto"
+      className="relative w-full md:w-auto cursor-pointer"
     //   onMouseEnter={() => window.innerWidth >= 768 && setOpen(true)}
     //   onMouseLeave={() => window.innerWidth >= 768 && setOpen(false)}
     >
@@ -43,7 +43,7 @@ const Dropdown = ({ title, items }) => {
               onClick={() => setOpen(false)}
               className="block px-4 py-2 rounded-md text-sm text-white/80 hover:bg-title hover:text-black transition"
             >
-              {item.label}
+            <p> {item.label}</p> 
             </Link>
           ))}
         </div>
