@@ -31,7 +31,7 @@ const Overview = () => {
                         )
                     })}
                 </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-5 ">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-5 md:max-w-[70%]  mx-auto ">
                      {details.slice(3, 5).map((data) => {
                         const IconComponent = data.icon;
                         return (

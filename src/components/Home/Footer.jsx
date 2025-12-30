@@ -9,25 +9,60 @@ import M5 from '../../assets/images/mentors/m5.jpg'
 import M6 from '../../assets/images/mentors/m6.jpg'
 import M7 from '../../assets/images/mentors/m7.jpg'
 import M8 from '../../assets/images/mentors/m8.jpg'
+import M9 from '../../assets/images/mentors/m9.jpg'
+import M10 from '../../assets/images/mentors/m10.jpg'
+
+import M11 from '../../assets/images/mentors/m11.jpg'
+import M12 from '../../assets/images/mentors/m12.jpg'
+import M13 from '../../assets/images/mentors/m13.webp'
+import M14 from '../../assets/images/mentors/m14.jpg'
+import M15 from '../../assets/images/mentors/m15.jpg'
+import M16 from '../../assets/images/mentors/m16.avif'
+import M17 from '../../assets/images/mentors/m17.avif'
+import M18 from '../../assets/images/mentors/m19.jpg'
+import M19 from '../../assets/images/mentors/m18.jpg'
+import M20 from '../../assets/images/mentors/m20.avif'
+
+import M21 from '../../assets/images/mentors/m21.jpg'
+import M22 from '../../assets/images/mentors/m22.avif'
+import M23 from '../../assets/images/mentors/m23.jpg'
+import M24 from '../../assets/images/mentors/m24.jpg'
+import M25 from '../../assets/images/mentors/m25.jpg'
+import M26 from '../../assets/images/mentors/m26.avif'
+import M27 from '../../assets/images/mentors/m28.jpg'
+import M28 from '../../assets/images/mentors/m29.jpg'
+import M29 from '../../assets/images/mentors/m27.jpg'
+import M30 from '../../assets/images/mentors/m30.avif'
+
+import M31 from '../../assets/images/mentors/m32.jpg'
+import M32 from '../../assets/images/mentors/m33.jpg'
+import M33 from '../../assets/images/mentors/m34.jpg'
+import M34 from '../../assets/images/mentors/m35.jpg'
+import M35 from '../../assets/images/mentors/m36.jpg'
+import M36 from '../../assets/images/mentors/m37.jpg'
+import M37 from '../../assets/images/mentors/m38.avif'
+import M38 from '../../assets/images/mentors/m39.jpg'
+import M39 from '../../assets/images/mentors/m40.jpg'
+import M40 from '../../assets/images/mentors/m42.avif'
+
 import Marquee from 'react-fast-marquee'
 
 const Footer = () => {
 
-    const images = [M1, M2, M3, M4, M5, M6, M7, M8]
+    const images = [ M1, M2, M3, M4, M5, M6, M7, M8, M9, M10, M11, M12, M13, M14, M15, M16, M17, M18, M19, M20, M21, M22, M23, M24, M25, M26, M27, M28, M29, M30, M31, M32, M33, M34, M35, M36, M37, M38, M39, M40 ]
+
     return (
         <>
-            <section className='bg-[#141414] mt-10'>
+            <section className='bg-[#141414] '>
                 <div className="films">
-                    <Marquee>
-                    <div className='flex items-center overflow-hidden'>
-                        {/* <Marquee> */}
-                        {images.map((img, index) => (
-                            <div key={index} className='w-40 h-60'>
-                                <img src={img} alt="Flims " className='w-100 h-60 object-cover' />
-                            </div>
-                        ))}
-                        {/* </Marquee> */}
-                    </div>
+                    <Marquee >
+                        <div className='flex items-center overflow-hidden'>
+                            {images.map((img, index) => (
+                                <div key={index} className='w-40 h-60'>
+                                    <img src={img} alt="Flims " className='w-100 h-60 object-cover' />
+                                </div>
+                            ))}
+                        </div>
                     </Marquee>
                 </div>
                 <div className="tag bg-title  xl:px-20 lg:px-15 md:px-10 px-5">
