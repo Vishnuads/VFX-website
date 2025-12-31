@@ -26,8 +26,8 @@ const Accredit = () => {
             <section className='md:py-20 py-10 xl:px-20 lg:px-15 md:px-10 px-5  overflow-hidden '>
                 <div>
                     <div className='text-center px-5 '>
-                        <p className='text-title uppercase my-3 font-semibold'>accredited by</p>
-                        <h1 className='text-white text-3xl my-5  lg:text-4xl xl:text-5xl'> Accreditation & Industry Recognition</h1>
+                        <p className='text-title uppercase mb-2 font-semibold'>accredited by</p>
+                        <h1 className='text-white text-3xl mb-2  lg:text-4xl xl:text-5xl'> Accreditation & Industry Recognition</h1>
                         <p className='text-para my-3 md:w-[70%] w-full mx-auto '>Certified. Trusted. Industry-Approved. At Cinema Factory Academy, our VFX programs are reviewed, validated, and shaped by leading professionals, global studios, and academic partners. Every module is built to meet current industry standards, ensuring students train with workflows, tools, and practices used in today’s top VFX pipelines.</p>
                     </div>
                     <div className="logos relative col-span-4 my-10 ">

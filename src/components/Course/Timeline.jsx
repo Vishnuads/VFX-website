@@ -14,8 +14,8 @@ const Timeline = () => {
         <>
             <section className='md:max-w-6xl mx-auto px-5 my-20'>
                 <div className='text-center px-5 '>
-                    <p className='text-title uppercase font-semibold'>Course Timeline</p>
-                    <h1 className='text-white text-3xl lg:text-4xl xl:text-5xl'>A Year That Changes Your Life</h1>
+                    <p className='text-title uppercase font-semibold mb-2'>Course Timeline</p>
+                    <h1 className='text-white text-3xl lg:text-4xl xl:text-5xl mb-2'>A Year That Changes Your Life</h1>
                     <p className='text-para'>From classroom to set — every month builds your future.</p>
                 </div>
                 <div className='relative hidden lg:block'>
@@ -32,7 +32,7 @@ const Timeline = () => {
                     </div>
                 </div>
                  <div className='relative lg:hidden block'>
-                    <div className='absolute -top-8 left-1/2 h-full w-1  bg-linear-to-br from-transparent via-title to-transparent '></div>
+                    <div className='absolute -top-10 left-1/2 h-[120%] w-1  bg-linear-to-t from-transparent via-title to-transparent '></div>
                     <div className=" my-10">
                         {time.map((t, idx) => (
                             <div className='flex relative flex-col items-center justify-center mb-15' key={idx}>

@@ -11,8 +11,8 @@ const Why = () => {
   return (
     <section className='md:mt-20 mt-10 xl:px-20 lg:px-15 md:px-10 px-5'>
         <div className='text-center px-5 '>
-        <p className='text-title font-semibold uppercase'>Why Choose Cinema Factory</p>
-        <h1 className='text-white text-3xl lg:text-4xl xl:text-5xl'>Learn from the Best in the Industry</h1>
+        <p className='text-title font-semibold uppercase mb-2'>Why Choose Cinema Factory</p>
+        <h1 className='text-white text-3xl lg:text-4xl xl:text-5xl mb-2'>Learn from the Best in the Industry</h1>
         <p className='text-para'>World-class mentors. Studio-grade ecosystem.</p>
       </div>
       <div className="grid lg:grid-cols-4 grid-cols-2 gap-3 my-10">

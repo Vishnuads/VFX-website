@@ -5,6 +5,7 @@ import Footer from '@/components/Home/Footer'
 import Hero from '@/components/Home/Hero'
 import Hiring from '@/components/Home/Hiring'
 import Navbar from '@/components/Home/Navbar'
+import Who from '@/components/Course/Who'
 import React from 'react'
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
                 <Hiring />
                 <AboutSection/>
                 <Course/>
+                <Who/>
                 <Accredit/>
                 <Footer/>
             </div>

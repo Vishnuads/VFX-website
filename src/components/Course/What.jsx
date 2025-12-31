@@ -12,17 +12,17 @@ const What = () => {
         {img: W1, title: "Compositing in Nuke", desc: "Finish film-quality shots using real compositing workflows."},
         {img: W2, title: "Shot Breakdown & Pre-Production Planning", desc: "Finish film-quality Analyze scripts and plan VFX shots like studio supervisors. using real compositing workflows."},
         {img: W3, title: "Tracking & Matchmove", desc: "Recreate camera movement digitally for CG integration."},
-        {img: W4, title: "Roto, Prep & Cleanup", desc: "Create seamless plates and roto mattes for studio pipelines."},
-        {img: W5, title: "Virtual Production & LED Volume", desc: "Work on real-time LED stages like modern film studios."},
-        {img: W6, title: "Internship + Showreel Portfolio", desc: "Graduate with a professional showreel ready for hiring."}
+        // {img: W4, title: "Roto, Prep & Cleanup", desc: "Create seamless plates and roto mattes for studio pipelines."},
+        // {img: W5, title: "Virtual Production & LED Volume", desc: "Work on real-time LED stages like modern film studios."},
+        // {img: W6, title: "Internship + Showreel Portfolio", desc: "Graduate with a professional showreel ready for hiring."}
     ]
 
     return (
         <>
             <section className=' xl:px-20 lg:px-15 md:px-10  px-5 md:my-20 my-10'>
                 <div className='text-center px-5 '>
-                    <p className='text-title uppercase font-semibold'>What You’ll Be Able to Do</p>
-                    <h1 className='text-white text-3xl lg:text-4xl xl:text-5xl'>Graduate as a Full-Pipeline Artist</h1>
+                    <p className='text-title uppercase font-semibold mb-2'>What You’ll Be Able to Do</p>
+                    <h1 className='text-white text-3xl lg:text-4xl xl:text-5xl mb-2'>Graduate as a Full-Pipeline Artist</h1>
                     <p className='text-para'>Hands-on role-based training prepares you for both on-set & studio work</p>
                 </div>
            

@@ -1,5 +1,5 @@
 import { CaretUpIcon } from '@phosphor-icons/react';
-import React, { useState } from 'react';
+import React from 'react';
 
 
 const StepItem = ({ step, title, details, image, toggle, isOpen }) => {
