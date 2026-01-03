@@ -83,7 +83,7 @@ const Course = () => {
                     <p className='text-para/80 text-center italic my-4 md:hidden block'>(* Click to see Course Details)</p>
             
                 <Carousel >
-                    <CarouselContent className="xl:ps-20 lg:ps-15 md:ps-10 ps-5 flex items-center justify-center
+                    <CarouselContent className="xl:ps-20 lg:ps-15 md:ps-10 ps-5 md:flex md:items-center md:justify-center
                     ">
                         {courses.map((course) => (
                             <CarouselItem className="md:basis-1/3  lg:basis-1/4 sm:basis-1/2 basis-full " key={course.id}>

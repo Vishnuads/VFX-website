@@ -1,16 +1,71 @@
 import Footer from "@/components/Home/Footer";
 import Navbar from "@/components/Home/Navbar";
 import React, { useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
 
 const Form = () => {
-    const [background, setBackground] = useState("Student");
 
-    const options = [
-        "Student",
-        "Working Professional",
-        "Beginner",
-        "Film / Media Background",
-    ];
+    const options = ["Student", "Working Professional", "Beginner", "Film / Media Background"];
+    const [loading, setLoading] = useState(false);
+    const [formData, setFormData] = useState({
+        fname: "",
+        phone: "",
+        email: "",
+        background: "Student"
+    })
+
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value })
+    }
+    const bgChange = (item) => {
+        setFormData({ ...formData, background: item })
+    }
+
+    const validate = () => {
+        if (!formData.fname.trim()) return " Name is Required";
+        if (!/^[6-9]\d{9}$/.test(formData.phone))
+            return "Enter valid mobile number";
+        if (!/^\S+@\S+\.\S+$/.test(formData.email))
+            return "Enter valid email";
+        if (!formData.background) return "Please select your background";
+        return null;
+    }
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        const error = validate();
+        if (error) {
+            toast.error(error)
+            return;
+        }
+        setLoading(true);
+
+        try {
+            const res = await fetch("https://script.google.com/macros/s/AKfycbxoMf4JpEU9NHYQfqFpFDZIsvt-qPnDsnOVvJnsp8I-4wKz6XzFkmkfJd1hIcd5-aNC7w/exec", {
+                method: "POST",
+                headers: { "Content-Type": "text/plain;charset=utf-8" },
+                body: JSON.stringify({ ...formData }),
+            })
+
+            const result = await res.json()
+            if (result.success) {
+                toast.success("Form Submitted Successfully !")
+                setFormData({ fname: "", phone: "", email: "", background: "Student" })
+            }
+
+        }
+        catch (err) {
+            toast.error("Somethig went Wrong ");
+            console.log(err)
+        }
+        finally {
+            setLoading(false)
+        }
+
+    }
+
+
 
     return (
         <>
@@ -43,13 +98,17 @@ const Form = () => {
                     </div>
 
                     <div>
-                        <form className="space-y-3">
+                        <form className="space-y-3" onSubmit={handleSubmit} >
                             {/* Input */}
                             <div>
                                 <label className="text-sm text-white mb-2 block">Full Name</label>
                                 <input
                                     type="text"
+                                    name="fname"
+                                    onChange={handleChange}
+                                    value={formData.fname}
                                     placeholder="Enter your name"
+
                                     className="w-full rounded-xl bg-[#2a2a2a] px-5 py-3 text-white placeholder:text-gray-500 outline-none focus:ring focus:ring-title"
                                 />
                             </div>
@@ -58,7 +117,11 @@ const Form = () => {
                                 <label className="text-sm text-white mb-2 block">Mobile Number</label>
                                 <input
                                     type="tel"
+                                    name="phone"
+                                    onChange={handleChange}
+                                    value={formData.phone}
                                     placeholder="Enter your phone number"
+
                                     className="w-full rounded-xl bg-[#2a2a2a] px-5 py-3 text-white placeholder:text-gray-500 outline-none focus:ring focus:ring-title"
                                 />
                             </div>
@@ -67,7 +130,11 @@ const Form = () => {
                                 <label className="text-sm text-white mb-2 block">Email Address</label>
                                 <input
                                     type="email"
+                                    name="email"
+                                    onChange={handleChange}
+                                    value={formData.email}
                                     placeholder="Enter your email"
+
                                     className="w-full rounded-xl bg-[#2a2a2a] px-5 py-3 text-white placeholder:text-gray-500 outline-none focus:ring focus:ring-title"
                                 />
                             </div>
@@ -80,15 +147,15 @@ const Form = () => {
                                         <button
                                             type="button"
                                             key={item}
-                                            onClick={() => setBackground(item)}
-                                            className={`rounded-xl relative overflow-hidden px-4 py-3 text-sm bg-[#2a2a2a] transition-all duration-100 ${background === item
+                                            onClick={() => bgChange(item)}
+                                            className={`rounded-xl relative overflow-hidden px-4 py-3 text-sm bg-[#2a2a2a] transition-all duration-100 ${formData.background === item
                                                 ? "border-title border text-title font-semibold"
                                                 : " text-gray-400 border border-transparent"
                                                 }`}
                                         >
                                             {item}
-                                            {background === item && 
-                                            <div className="absolute -top-5 -right-3 bg-title w-10 h-10 rounded-full blur-lg"></div>}
+                                            {formData.background === item &&
+                                                <div className="absolute -top-5 -right-3 bg-title w-10 h-10 rounded-full blur-lg"></div>}
                                         </button>
                                     ))}
                                 </div>
@@ -97,15 +164,17 @@ const Form = () => {
                             {/* CTA */}
                             <button
                                 type="submit"
+                                disabled={loading}
                                 className="w-full mt-4 rounded-xl bg-title py-4 text-black font-bold hover:bg-title/70 cursor-pointer transition-all duration-300"
                             >
-                                Book Free Career Consultation
+                                {loading ? "Submitting..." : "Book Free Career Consultation"}
+
                             </button>
                         </form>
                     </div>
                 </div>
             </section>
-
+            <ToastContainer hideProgressBar theme="colored" closeOnClick autoClose={4000}/>
             <Footer />
         </>
     );

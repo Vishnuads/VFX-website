@@ -27,7 +27,7 @@ const Hiring = () => {
                     <div className="w-full">
                         <h1 className='xl:text-3xl lg:text-2xl text-xl  text-left hidden md:block'>global vfx studios <br />
                             that value our talent</h1>
-                        <h1 className='xl:text-3xl lg:text-2xl text-xl text-left md:hidden block'>global vfx studios
+                        <h1 className='xl:text-3xl lg:text-2xl text-xl text-center md:hidden block'>global vfx studios
                             that value our talent</h1>
                     </div>
                     <div className="logos relative col-span-4 overflow-hidden">

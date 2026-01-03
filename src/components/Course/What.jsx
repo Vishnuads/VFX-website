@@ -19,7 +19,7 @@ const What = () => {
 
     return (
         <>
-            <section className=' xl:px-20 lg:px-15 md:px-10  px-5 md:my-20 my-10'>
+            <section className=' xl:px-20 lg:px-15 md:px-10  px-5  my-10'>
                 <div className='text-center px-5 '>
                     <p className='text-title uppercase font-semibold mb-2'>What You’ll Be Able to Do</p>
                     <h1 className='text-white text-3xl lg:text-4xl xl:text-5xl mb-2'>Graduate as a Full-Pipeline Artist</h1>

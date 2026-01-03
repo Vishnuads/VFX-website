@@ -17,7 +17,7 @@ const Navbar = () => {
     };
     const programs =[
         {label: "VFX Mastery", link: "/course"},
-        {label: "Shot Term", link: "/short-term"}
+        // {label: "Shot Term", link: "/short-term"}
     ]
 
     return (
