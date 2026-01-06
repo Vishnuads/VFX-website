@@ -33,7 +33,7 @@ const Expect = () => {
                                 <p className="text-3xl font-bold uppercase">{d.title}</p>
                                 <p className="text-lg uppercase">{d.sub}</p>
                             </div>
-                            <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 text-white text-center bg-black/60 transition-all duration-500 ease-in-out">
+                            <div className="absolute inset-0 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 text-white text-center bg-black/80 transition-all duration-500 ease-in-out">
                                 <p className="text-md w-[90%] mx-auto">{d.desc}</p>
                             </div>
                         </div>

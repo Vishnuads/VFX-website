@@ -36,7 +36,7 @@ const Form = () => {
 
         const error = validate();
         if (error) {
-            toast.error(error)
+            // toast.error(error)
             return;
         }
         setLoading(true);
@@ -81,7 +81,7 @@ const Form = () => {
                     <p className='text-para'>Get personalized guidance on the right VFX path, skills, and next steps.</p>
                 </div>
 
-                <div className="relative px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div className="relative  grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
                     {/* LEFT CARD */}
                     <div className="relative rounded-3xl overflow-hidden h-full">
@@ -106,11 +106,13 @@ const Form = () => {
                                     type="text"
                                     name="fname"
                                     onChange={handleChange}
+                                    required
                                     value={formData.fname}
                                     placeholder="Enter your name"
 
                                     className="w-full rounded-xl bg-[#2a2a2a] px-5 py-3 text-white placeholder:text-gray-500 outline-none focus:ring focus:ring-title"
                                 />
+                                {/* <p>{error.name}</p> */}
                             </div>
 
                             <div>
@@ -119,6 +121,7 @@ const Form = () => {
                                     type="tel"
                                     name="phone"
                                     onChange={handleChange}
+                                    required
                                     value={formData.phone}
                                     placeholder="Enter your phone number"
 
@@ -132,6 +135,7 @@ const Form = () => {
                                     type="email"
                                     name="email"
                                     onChange={handleChange}
+                                    required
                                     value={formData.email}
                                     placeholder="Enter your email"
 
