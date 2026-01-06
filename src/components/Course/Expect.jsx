@@ -1,5 +1,5 @@
 import React from 'react'
-import Img1 from '../../assets/images/course.png'
+import Img1 from '../../assets/images/course.webp'
 
 const Expect = () => {
 

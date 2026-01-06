@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import CourseBg from '../../assets/images/course1.png'
+import CourseBg from '../../assets/images/course1.webp'
 import { DownloadSimple } from '@phosphor-icons/react'
 
 
