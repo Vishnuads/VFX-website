@@ -65,7 +65,7 @@ const logos = [
 
 const Tools = () => {
     return (
-        <section className="xl:px-20 lg:px-16 md:px-10 px-5 md:mb-24 mb-14">
+        <section className="md:max-w-6xl mx-auto px-5 md:mb-24 mb-14">
 
             {/* Section Header */}
             <div className="text-center mb-12">

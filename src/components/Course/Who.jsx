@@ -39,14 +39,14 @@ const Who = () => {
 
     return (
         <>
-            <section className='md:py-20 py-10 xl:px-20 lg:px-15 md:px-10 px-5 '>
+            <section className='md:py-20 py-10 md:max-w-6xl mx-auto px-5 '>
                 <div className='text-center '>
                     <p className='text-title uppercase mb-2'>Expert Guidance</p>
                     <h1 className='text-white text-3xl  md:text-4xl lg:text-5xl xl:text-6xl mb-2'>Meet the Mentors Behind Your VFX Journey</h1>
                     <p className='text-para'>Learn directly from professionals who have worked on real films, series, and visual effects projects</p>
                 </div>
 
-                <div className='grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-12 my-10 px-4'>
+                <div className='grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6 my-10 px-4'>
                     {data.slice(0, 3).map((item, index) => (
                         <div className=' rounded-2xl  text-center mb-3 p-5' key={index}>
                             <div className='bg-linear-to-b relative from-title via-title/20 to-transparent w-full h-[full] rounded-xl'>
@@ -60,7 +60,7 @@ const Who = () => {
                         </div>
                     ))}
                 </div>
-                <div className='grid grid-cols-1 md:grid-cols-2 md:w-[70%] mx-auto md:gap-12 gap-6 my-10 px-4'>
+                <div className='grid grid-cols-1 md:grid-cols-2 md:w-[70%] mx-auto md:gap-6 gap-3 my-10 px-4'>
                     {data.slice(3, 5).map((item, index) => (
                         <div className=' rounded-2xl  text-center mb-3 p-5' key={index}>
                             <div className='bg-linear-to-b relative from-title via-title/20 to-transparent w-full h-[full] rounded-xl'>

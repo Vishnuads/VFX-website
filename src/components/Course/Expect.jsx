@@ -13,7 +13,7 @@ const Expect = () => {
     ]
     return (
         <>
-            <section className='md:py-20 py-10 xl:px-20 lg:px-15 md:px-10 px-5 '>
+            <section className='md:py-20 py-10 md:max-w-6xl mx-auto px-5 '>
                 <div className='text-center '>
                     <p className='text-title uppercase mb-2'>Expert Guidance</p>
                     <h1 className='text-white text-3xl  md:text-4xl lg:text-5xl xl:text-6xl mb-2'>WHAT TO EXPECT</h1>

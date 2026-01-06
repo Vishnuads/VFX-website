@@ -71,7 +71,8 @@ const Form = () => {
         <>
             <Navbar />
 
-            <section className="relative bg-[#141414] py-24 overflow-hidden xl:px-20 lg:px-15 md:px-10 px-5">
+            <section className="relative bg-[#141414] py-24 overflow-hidden  px-5">
+                <div className="md:max-w-6xl mx-auto">
                 {/* Background Glow */}
                 <div className="absolute -top-40 -left-40 w-[500px] h-[500px] bg-lime-400/20 blur-[160px]" />
                 <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-lime-400/10 blur-[160px]" />
@@ -82,7 +83,6 @@ const Form = () => {
                 </div>
 
                 <div className="relative  grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-
                     {/* LEFT CARD */}
                     <div className="relative rounded-3xl overflow-hidden h-full">
                         <div className="absolute inset-0 bg-linear-to-br from-title/80 via-title to-black" />
@@ -176,6 +176,7 @@ const Form = () => {
                             </button>
                         </form>
                     </div>
+                </div>
                 </div>
             </section>
             <ToastContainer hideProgressBar theme="colored" closeOnClick autoClose={4000}/>

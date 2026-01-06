@@ -9,7 +9,7 @@ const Why = () => {
     const img =[W1, W2, W3, W4]
 
   return (
-    <section className='  xl:px-20 lg:px-15 md:px-10 px-5'>
+    <section className='  md:max-w-6xl mx-auto px-5'>
         <div className='text-center px-5 '>
         <p className='text-title font-semibold uppercase mb-2'>Why Choose Cinema Factory</p>
         <h1 className='text-white text-3xl lg:text-4xl xl:text-5xl mb-2'>Learn from the Best in the Industry</h1>

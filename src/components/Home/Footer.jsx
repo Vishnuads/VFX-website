@@ -66,12 +66,12 @@ const Footer = () => {
                         </div>
                     </Marquee>
                 </div>
-                <div className="tag bg-title  xl:px-20 lg:px-15 md:px-10 px-5">
-                    <div className=''>
+                <div className="tag bg-title   px-5">
+                    <div className='md:max-w-6xl mx-auto'>
                         <h1 className='text-black text-2xl md:text-4xl py-5'>credits from cinema factory mentors</h1>
                     </div>
                 </div>
-                <footer className='py-7 xl:px-20 lg:px-15 md:px-10 px-5'>
+                <footer className='py-7 md:max-w-6xl mx-auto px-5'>
                     <div className="grid md:grid-cols-3 grid-cols-1 gap-3">
                         <div className='mb-3'>
                             <img src={logo} alt="CFA Logo" className='w-80' />

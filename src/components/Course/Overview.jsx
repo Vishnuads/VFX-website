@@ -13,7 +13,7 @@ const Overview = () => {
    
     return (
         <>
-            <section className='md:my-20 my-10 xl:px-20 lg:px-15 md:px-10 px-5'>
+            <section className='md:my-20 my-10 md:max-w-6xl mx-auto px-5'>
                 <div className='px-5 text-center mb-10' >
                     <p className='text-title uppercase font-semibold'>Overview</p>
                     <h1 className=' text-white text-3xl lg:text-4xl xl:text-5xl line-clamp-2 my-2  uppercase'>Program at a Glance</h1>

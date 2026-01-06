@@ -24,7 +24,7 @@ const Accredit = () => {
 
     return (
         <>
-            <section className='md:pb-20 pb-10 xl:px-20 lg:px-15 md:px-10 px-5  overflow-hidden '>
+            <section className='md:pb-20 pb-10 md:max-w-6xl mx-auto px-5 overflow-hidden '>
                 <div>
                     <div className='text-center px-5 '>
                         <p className='text-title uppercase mb-2 font-semibold'>accredited by</p>

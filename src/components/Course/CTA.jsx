@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const CTA = () => {
   return (
-    <section className="xl:px-20 lg:px-16 md:px-10 px-5 md:py-20 py-15">
+    <section className="md:max-w-6xl mx-auto px-5 md:py-20 py-15">
       <div className="relative mx-auto md:w-[80%] w-full h-[300px] rounded-3xl overflow-hidden">
         
         {/* Background Image */}

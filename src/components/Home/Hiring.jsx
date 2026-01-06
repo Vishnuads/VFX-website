@@ -23,7 +23,7 @@ const Hiring = () => {
     return (
         <>
             <section className='text-white py-5 '>
-                <div className="xl:px-20 lg:px-15 md:px-10 px-5   grid md:grid-cols-5 grid-cols-1 space-y-4 mt-3 text-center">
+                <div className="md:max-w-6xl mx-auto px-5   grid md:grid-cols-5 grid-cols-1 space-y-4 mt-3 text-center">
                     <div className="w-full">
                         <h1 className='xl:text-3xl lg:text-2xl text-xl  text-left hidden md:block'>global vfx studios <br />
                             that value our talent</h1>

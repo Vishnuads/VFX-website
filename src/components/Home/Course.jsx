@@ -71,7 +71,7 @@ const Course = () => {
 
     return (
         <>
-            <section className='py-10  '>
+            <section className='py-10  md:max-w-6xl mx-auto'>
                 <div className='text-center px-5 '>
                     <p className='text-title font-semibold mb-2'>COURSES</p>
                     <h1 className='text-white text-3xl lg:text-4xl xl:text-5xl mb-2'> Level Up Your Skills with Our Most In-Demand VFX Programs</h1>
