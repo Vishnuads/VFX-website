@@ -7,6 +7,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay"
+import ReactPlayer from "react-player";
 
 
 const AboutSection = () => {
@@ -23,34 +24,26 @@ const AboutSection = () => {
 
           </div>
           <div className='flex items-center justify-center '>
-            {/* <iframe
+            <iframe
               width={520}
               height={315}
               className='w-full md:h-full h-[250px]'
               src="https://www.youtube.com/embed/j-C7gtxjRTk?si=O2a2WFem7Du--wG-"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; "
+              allow="autoplay"
               referrerPolicy="strict-origin-when-cross-origin"
               allowFullScreen
-            /> */}
-            <Carousel plugins={[
-              Autoplay({
-                delay: 4000,
-              }),
-            ]} >
+            />
+           
+        {/* <Carousel plugins={[ Autoplay({ delay: 4000 }) ]}>
               <CarouselContent>
-
                 <CarouselItem className=" ">
                   <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80" alt="" />
-
                 </CarouselItem>
                 <CarouselItem>
                   <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80" alt="" />
                 </CarouselItem>
-
               </CarouselContent>
-          
-            </Carousel>
+            </Carousel> */}
 
           </div>
         </div>

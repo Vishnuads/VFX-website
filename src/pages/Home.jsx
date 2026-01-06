@@ -11,7 +11,7 @@ import React from 'react'
 const Home = () => {
     return (
         <>
-            <div className="bg-[#141414]">
+            <div className="bg-[#141414] ">
                 <Navbar />
                 <Hero />
                 <Hiring />

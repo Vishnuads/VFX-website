@@ -13,27 +13,27 @@ const Who = () => {
         {
             img: Mentor1,
             title: "Ritto Prabu",
-            desc: "Kickstart a creative career from zero"
+            desc: "VFX & VP HOD at Cinema Factory"
         },
         {
             img: Mentor2,
             title: "Cam Sharpe",
-            desc: "Master VFX workflows that elevate storytelling"
+            desc: "Compositor"
         },
         {
             img: Mentor3,
             title: "Marina Hiromi",
-            desc: "Upgrade skills to advanced studio tasks"
+            desc: "Compositor/Moiton Graphic"
         },
         {
             img: Mentor4,
             title: "Miguel Basulto",
-            desc: "Target compositing, matchmove, VP roles"
+            desc: "Compositor"
         },
         {
             img: Mentor5,
             title: "Ken Simpson",
-            desc: "Target compositing, matchmove, VP roles"
+            desc: "Compositor"
         },
     ]
 
@@ -56,7 +56,7 @@ const Who = () => {
                             </div>
 
                             <p className='text-white font-semibold mt-2 uppercase'> {item.title}</p>
-                            {/* <p className='text-para text-sm w-[90%] mx-auto mt-1 '>{item.desc}</p> */}
+                            <p className='text-para  w-[90%] mx-auto mt-1 '>{item.desc}</p>
                         </div>
                     ))}
                 </div>
@@ -70,7 +70,7 @@ const Who = () => {
                             </div>
 
                             <p className='text-white font-semibold mt-2 uppercase'> {item.title}</p>
-                            {/* <p className='text-para text-sm w-[90%] mx-auto mt-1 '>{item.desc}</p> */}
+                            <p className='text-para  w-[90%] mx-auto mt-1 '>{item.desc}</p>
                         </div>
                     ))}
                 </div>

@@ -50,7 +50,7 @@ const Form = () => {
 
             const result = await res.json()
             if (result.success) {
-                toast.success("Form Submitted Successfully !")
+                toast.success("Thankyou for your Interest ! Our Team will contact you soon")
                 setFormData({ fname: "", phone: "", email: "", background: "Student" })
             }
 
@@ -167,7 +167,7 @@ const Form = () => {
                                 disabled={loading}
                                 className="w-full mt-4 rounded-xl bg-title py-4 text-black font-bold hover:bg-title/70 cursor-pointer transition-all duration-300"
                             >
-                                {loading ? "Submitting..." : "Book Free Career Consultation"}
+                                {loading ? "Booking..." : "Book Free Career Consultation"}
 
                             </button>
                         </form>

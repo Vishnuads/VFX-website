@@ -20,7 +20,6 @@ const StepItem = ({ step, title, details, image, toggle, isOpen }) => {
                        <CaretUpIcon/> 
                     </span>
                 </div>
-
                 {/* {isOpen && ( */}
                     <div className='transition-all duration-500 ease-in-out px-3'>
                         <p className="mt-4 text-white font-semibold text-md">

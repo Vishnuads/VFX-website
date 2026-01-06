@@ -46,6 +46,7 @@ import M39 from '../../assets/images/mentors/m40.jpg'
 import M40 from '../../assets/images/mentors/m42.avif'
 
 import Marquee from 'react-fast-marquee'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
 
@@ -80,9 +81,11 @@ const Footer = () => {
                                 <div >
                                     <p className='text-white text-lg font-bold mb-3'> Quick Links</p>
                                     <ul className='text-para space-y-2 footer-li'>
-                                        <li><p>Home</p></li>
-                                        <li><p>About Us</p></li>
-                                        <li><p>Connect with Us</p></li>
+                                        <li>
+                                            <Link to="/" ><p>Home</p></Link>
+                                        </li>
+                                        {/* <li> <Link ><p>About Us</p></Link></li> */}
+                                        <li>  <Link to="/apply" ><p>Contact Us</p> </Link></li>
                                     </ul>
                                 </div>
                                 <div>

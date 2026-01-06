@@ -1,7 +1,7 @@
 import React from 'react'
-import W1 from '../../assets/images/what/1.png'
-import W2 from '../../assets/images/what/2.png'
-import W3 from '../../assets/images/what/3.png'
+import W1 from '../../assets/images/what/01.png'
+import W2 from '../../assets/images/what/02.png'
+import W3 from '../../assets/images/what/03.png'
 import W4 from '../../assets/images/what/4.png'
 import W5 from '../../assets/images/what/5.png'
 import W6 from '../../assets/images/what/6.png'
@@ -9,9 +9,9 @@ import W6 from '../../assets/images/what/6.png'
 const What = () => {
 
     const data = [
-        {img: W1, title: "Compositing in Nuke", desc: "Finish film-quality shots using real compositing workflows."},
-        {img: W2, title: "Shot Breakdown & Pre-Production Planning", desc: "Finish film-quality Analyze scripts and plan VFX shots like studio supervisors. using real compositing workflows."},
-        {img: W3, title: "Tracking & Matchmove", desc: "Recreate camera movement digitally for CG integration."},
+        {img: W1, title: "On-Set VFX Assistant", desc: "Assists VFX team by capturing on-set data and references"},
+        {img: W2, title: "On-Set VFX Supervisor Assistant", desc: "Supports VFX supervision, ensuring accurate execution during live-action shoots."},
+        {img: W3, title: "Junior Compositing Artist", desc: "Composites CGI and live footage into visually seamless final shots."},
         // {img: W4, title: "Roto, Prep & Cleanup", desc: "Create seamless plates and roto mattes for studio pipelines."},
         // {img: W5, title: "Virtual Production & LED Volume", desc: "Work on real-time LED stages like modern film studios."},
         // {img: W6, title: "Internship + Showreel Portfolio", desc: "Graduate with a professional showreel ready for hiring."}
@@ -21,7 +21,7 @@ const What = () => {
         <>
             <section className=' xl:px-20 lg:px-15 md:px-10  px-5  my-10'>
                 <div className='text-center px-5 '>
-                    <p className='text-title uppercase font-semibold mb-2'>What You’ll Be Able to Do</p>
+                    <p className='text-title uppercase font-semibold mb-2'>What You’ll Be Able to Became</p>
                     <h1 className='text-white text-3xl lg:text-4xl xl:text-5xl mb-2'>Graduate as a Full-Pipeline Artist</h1>
                     <p className='text-para'>Hands-on role-based training prepares you for both on-set & studio work</p>
                 </div>
