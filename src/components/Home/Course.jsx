@@ -20,28 +20,28 @@ const Course = () => {
     const courses = [
         {
             id: 1, image: C1, title: "One-Year VFX Mastery Program", desc: [
-                "Master the art of combining live-action footage with CGI elements.",
-                "Learn advanced keying, tracking, cleanup, and photoreal integration.",
-                "Work with multi-pass renders, AOVs, and complex Nuke node networks.",
-                "Perfect for those aiming to become high-end compositors in studios."
+                "Master the complete VFX filmmaking pipeline—from on-set to final compositing.",
+                "Learn industry-standard tools, AI workflows, motion capture, and virtual production.",
+                "Train through live shoots, hands-on labs, and real studio projects.",
+                "Graduate with certification, internship experience, and a job-ready show-reel."
             ]
         },
-          {
-            id: 2, image: C2, title: "3D Animation & Character Movement", desc: [
-                "Build strong foundations in 3D animation principles and character motion.",
-                "Learn walk cycles, body mechanics, facial acting, and timing.",
-                "Practice in a production-style environment using Maya and Blender.",
-                "Perfect for students wanting to enter character animation roles."
-            ]
-        },
-          {
-            id: 3, image: C3, title: "Motion Graphics & Digital Design", desc: [
-                "Learn to design dynamic motion graphics for films, ads, and digital media.",
-                "Understand typography, visual rhythm, and animation timing.",
-                "Create broadcast-quality graphics and title animations.",
-                "Ideal for those interested in motion design and creative storytelling."
-            ]
-        },
+        //   {
+        //     id: 2, image: C2, title: "3D Animation & Character Movement", desc: [
+        //         "Build strong foundations in 3D animation principles and character motion.",
+        //         "Learn walk cycles, body mechanics, facial acting, and timing.",
+        //         "Practice in a production-style environment using Maya and Blender.",
+        //         "Perfect for students wanting to enter character animation roles."
+        //     ]
+        // },
+        //   {
+        //     id: 3, image: C3, title: "Motion Graphics & Digital Design", desc: [
+        //         "Learn to design dynamic motion graphics for films, ads, and digital media.",
+        //         "Understand typography, visual rhythm, and animation timing.",
+        //         "Create broadcast-quality graphics and title animations.",
+        //         "Ideal for those interested in motion design and creative storytelling."
+        //     ]
+        // },
         //   {
         //     id: 4, image: C4, title: "Virtual Production & Unreal Engine Pipeline", desc: [
         //         "Discover how real-time 3D tools power modern filmmaking.",
@@ -71,22 +71,22 @@ const Course = () => {
 
     return (
         <>
-            <section className='py-10  md:max-w-6xl mx-auto'>
+            <section className='py-10  md:max-w-6xl mx-auto px-5'>
                 <div className='text-center px-5 '>
                     <p className='text-title font-semibold mb-2'>COURSES</p>
                     <h1 className='text-white text-3xl lg:text-4xl xl:text-5xl mb-2'> Level Up Your Skills with Our Most In-Demand VFX Programs</h1>
                     <p className='text-para'>Explore specialised courses designed to prepare you for real studio workflows across VFX, Filmmaking, Animation, and Virtual Production.</p>
                 </div>
-                <p className='md:flex justify-end items-center text-para/80 italic hidden w-[94%] my-3 gap-4'>* Swipe <ArrowRightIcon size={20}/></p>
+                {/* <p className='md:flex justify-end items-center text-para/80 italic hidden w-[94%] my-3 gap-4'>* Swipe <ArrowRightIcon size={20}/></p> */}
 
                 <div className="my-10 px-0">
                     <p className='text-para/80 text-center italic my-4 md:hidden block'>(* Click to see Course Details)</p>
             
                 <Carousel >
-                    <CarouselContent className="xl:ps-20 lg:ps-15 md:ps-10 ps-5 md:flex md:items-center md:justify-center
+                    <CarouselContent className=" md:flex md:items-center md:justify-center
                     ">
                         {courses.map((course) => (
-                            <CarouselItem className="md:basis-1/3  lg:basis-1/4 sm:basis-1/2 basis-full " key={course.id}>
+                            <CarouselItem className="md:basis-1/3   sm:basis-1/2 basis-full  " key={course.id}>
                                 <CourseCard
                                 image={course.image}
                                     title={course.title}

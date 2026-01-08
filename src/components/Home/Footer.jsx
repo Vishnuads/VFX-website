@@ -66,25 +66,25 @@ const Footer = () => {
                         </div>
                     </Marquee>
                 </div>
-                <div className="tag bg-title   px-5">
-                    <div className='md:max-w-6xl mx-auto'>
+                <div className="tag bg-title   ">
+                    <div className='md:max-w-6xl mx-auto px-5'>
                         <h1 className='text-black text-2xl md:text-4xl py-5'>credits from cinema factory mentors</h1>
                     </div>
                 </div>
                 <footer className='py-7 md:max-w-6xl mx-auto px-5'>
-                    <div className="grid md:grid-cols-3 grid-cols-1 gap-3">
+                    <div className="grid md:grid-cols-4 grid-cols-1 gap-3">
                         <div className='mb-3'>
                             <img src={logo} alt="CFA Logo" className='w-80' />
                         </div>
-                        <div >
-                            <div className="md:flex justify-center space-y-3 gap-5">
+                        <div className='col-span-2' >
+                            <div className="md:flex justify-center space-y-3 md:gap-8">
                                 <div >
                                     <p className='text-white text-lg font-bold mb-3'> Quick Links</p>
                                     <ul className='text-para space-y-2 footer-li'>
                                         <li>
                                             <Link to="/" ><p>Home</p></Link>
                                         </li>
-                                        {/* <li> <Link ><p>About Us</p></Link></li> */}
+                                        <li> <Link to="/global" ><p>Global Exposure</p></Link></li>
                                         <li>  <Link to="/apply" ><p>Contact Us</p> </Link></li>
                                     </ul>
                                 </div>
@@ -100,7 +100,7 @@ const Footer = () => {
                                 </div>
                             </div>
                         </div>
-                        <div>
+                        <div className='w-full'>
                             <p className='text-white text-lg font-bold'>Stay Updated With Cinema Factory VFX</p>
                             <p className='text-para text-sm my-2'>Sign up to receive program updates, industry insights, job alerts, and exclusive offers from Cinema Factory Academy.</p>
 

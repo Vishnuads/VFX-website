@@ -99,7 +99,7 @@ const Tools = () => {
                                     <img
                                         src={tool.logo}
                                         alt={tool.name}
-                                        className="h-auto w-16 object-contain md:grayscale group-hover:grayscale-0 transition"
+                                        className="h-auto w-24 object-contain md:grayscale group-hover:grayscale-0 transition"
                                     />
                                 </div>
                             ))}
@@ -139,7 +139,7 @@ const Tools = () => {
                                     <img
                                         src={tool.logo}
                                         alt={tool.name}
-                                        className="h-auto w-16 object-contain md:grayscale group-hover:grayscale-0 transition"
+                                        className="h-auto w-24 object-contain md:grayscale group-hover:grayscale-0 transition"
                                     />
                                 </div>
                             ))}

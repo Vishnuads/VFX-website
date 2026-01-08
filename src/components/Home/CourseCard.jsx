@@ -8,7 +8,7 @@ const CourseCard = ({ image, title, desc }) => {
     return (
         <div className='w-full'>
             <div className="group  relative overflow-hidden">
-                <div className="w-full h-[380px] group-hover:h-[450px]  transition-all duration-500 ease-in-in-out  ">
+                <div className="w-full h-[380px] group-hover:h-[420px]  transition-all duration-500 ease-in-in-out  ">
                     <img src={image} alt="Courses" className='absolute inset-0 w-full h-full object-cover' />
                     {/* <img src={C1} alt="Courses" className='absolute inset-0 object-center group-hover:scale-110 transition-all duration-500 ' /> */}
 
@@ -17,7 +17,7 @@ const CourseCard = ({ image, title, desc }) => {
                     <div className="absolute inset-0 z-5 mt-5">
                         <p className='text-white text-center text-xl px-5 font-semibold group-hover:text-black transition-all duration-500 ease-in-out  mx-auto'>{title}</p>
                     </div>
-                    <div className="absolute top-[50%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 text-black w-[75%] my-3 transition-all duration-500 ease-in-out">
+                    <div className="absolute top-[45%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 text-black w-[75%] my-3 transition-all duration-500 ease-in-out">
                         <div className="flex items-center justify-center ">
                             <ul className='list-disc space-y-1'>
                                 {desc.map((item, index) => (

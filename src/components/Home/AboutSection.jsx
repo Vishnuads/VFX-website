@@ -3,14 +3,21 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay"
-import ReactPlayer from "react-player";
+import Img1 from '../../assets/images/about/(60).jpeg'
+import Img2 from '../../assets/images/about/(63).jpeg'
+import Img3 from '../../assets/images/about/(69).jpeg'
+import Img4 from '../../assets/images/about/(74).jpeg'
+import Img5 from '../../assets/images/about/(77).jpeg'
+import Img6 from '../../assets/images/about/(79).jpeg'
+import Img7 from '../../assets/images/about/(81).jpeg'
+import Img8 from '../../assets/images/about/(63).jpeg'
 
 
 const AboutSection = () => {
+
+  const images = [Img1, Img2, Img3, Img4, Img5, Img6, Img7, Img8]
   return (
     <>
       <section className='text-white  flex justify-center items-center xl:py-20 lg:py-15 py-10 '>
@@ -24,26 +31,16 @@ const AboutSection = () => {
 
           </div>
           <div className='flex items-center justify-center '>
-            <iframe
-              width={520}
-              height={315}
-              className='w-full md:h-full h-[250px]'
-              src="https://www.youtube.com/embed/j-C7gtxjRTk?si=O2a2WFem7Du--wG-"
-              allow="autoplay"
-              referrerPolicy="strict-origin-when-cross-origin"
-              allowFullScreen
-            />
-           
-        {/* <Carousel plugins={[ Autoplay({ delay: 4000 }) ]}>
+
+            <Carousel plugins={[Autoplay({ delay: 3000 })]} opts={{ align: "start", loop: true, }}>
               <CarouselContent>
-                <CarouselItem className=" ">
-                  <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&q=80" alt="" />
-                </CarouselItem>
-                <CarouselItem>
-                  <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80" alt="" />
-                </CarouselItem>
+                {images.map((i, idx) => (
+                  <CarouselItem className="" key={idx}>
+                    <img src={i} alt="International-images" className='w-full md:h-90 h-50 object-cover' />
+                  </CarouselItem>
+                ))}
               </CarouselContent>
-            </Carousel> */}
+            </Carousel>
 
           </div>
         </div>

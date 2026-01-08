@@ -22,7 +22,7 @@ const Dropdown = ({ title, items }) => {
       {/* Trigger */}
       <button
         onClick={() => setOpen(!open)}
-        className="flex items-center justify-center md:justify-start gap-1 text-sm font-medium text-white w-full md:w-auto"
+        className="flex items-center justify-center md:justify-start gap-1  font-medium text-white w-full md:w-auto"
       >
         {displayTitle}
         <ChevronDown
