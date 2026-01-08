@@ -6,8 +6,6 @@ import Mentor4 from '../../assets/images/mentor/44.png'
 import Mentor5 from '../../assets/images/mentor/1.png'
 import Mentor6 from '../../assets/images/mentor/final.png'
 
-
-
 const Who = () => {
 
     const data = [

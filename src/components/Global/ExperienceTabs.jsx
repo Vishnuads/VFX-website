@@ -16,9 +16,9 @@ import S5 from '../../assets/images/Bangkok/lab/7.jpeg'
 
 import W1 from '../../assets/images/Bangkok/workshop/(4).jpeg'
 import W2 from '../../assets/images/Bangkok/workshop/(3).jpeg'
-import W3 from '../../assets/images/Bangkok/workshop/(5).jpg'
-import W4 from '../../assets/images/Bangkok/workshop/(6).jpg'
-import W5 from '../../assets/images/Bangkok/workshop/(10).jpg'
+import W3 from '../../assets/images/Bangkok/workshop/(5).webp'
+import W4 from '../../assets/images/Bangkok/workshop/(6).webp'
+import W5 from '../../assets/images/Bangkok/workshop/11.webp'
 
 export default function ExperienceTabs() {
 

@@ -2,9 +2,7 @@ import React from 'react'
 import W1 from '../../assets/images/what/01.webp'
 import W2 from '../../assets/images/what/02.webp'
 import W3 from '../../assets/images/what/03.webp'
-import W4 from '../../assets/images/what/4.png'
-import W5 from '../../assets/images/what/5.png'
-import W6 from '../../assets/images/what/6.png'
+
 
 const What = () => {
 

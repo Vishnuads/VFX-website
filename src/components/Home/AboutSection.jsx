@@ -12,12 +12,12 @@ import Img4 from '../../assets/images/about/(74).jpeg'
 import Img5 from '../../assets/images/about/(77).jpeg'
 import Img6 from '../../assets/images/about/(79).jpeg'
 import Img7 from '../../assets/images/about/(81).jpeg'
-import Img8 from '../../assets/images/about/(63).jpeg'
+
 
 
 const AboutSection = () => {
 
-  const images = [Img1, Img2, Img3, Img4, Img5, Img6, Img7, Img8]
+  const images = [Img1, Img2, Img3, Img4, Img5, Img6, Img7]
   return (
     <>
       <section className='text-white  flex justify-center items-center xl:py-20 lg:py-15 py-10 '>

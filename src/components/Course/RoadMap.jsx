@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import StepItem from './StepItem';
-import S1 from '../../assets/images/step/step.png'
-import S2 from '../../assets/images/step/2.png'
-import S3 from '../../assets/images/step/3.png'
-import S4 from '../../assets/images/step/4.png'
-import S5 from '../../assets/images/step/5.png'
-import S6 from '../../assets/images/step/6.png'
+import S1 from '../../assets/images/step/step.webp'
+import S2 from '../../assets/images/step/2.webp'
+import S3 from '../../assets/images/step/3.webp'
+import S4 from '../../assets/images/step/4.webp'
+import S5 from '../../assets/images/step/5.webp'
+import S6 from '../../assets/images/step/6.webp'
 
 const RoadMap = () => {
   const stepData = [
