@@ -34,20 +34,16 @@ const Navbar = () => {
                             <Link to="/">
                                 <p>Home </p>
                             </Link>
-                          
                             <Dropdown title="Programs" items={programs} />
-
                             <Link to="/global">
                                 <p>Global Exposure</p>
                             </Link>
-
                         </div>
                     </div>
 
-
-                    <div className="cta hidden md:block">
+                    <div className="cta hidden md:block ">
                         <Link to="/apply">
-                            <button className='bg-[#bced00] shadow-[0px_0px_10px_1px] shadow-title/70 rounded-3xl px-4 md:px-5 py-1 md:py-2 text-sm sm:text-base font-medium'>Apply Now</button>
+                            <button className='bg-[#bced00] cursor-pointer shadow-[0px_0px_10px_1px] hover:shadow-[0px_0px_10px_2px] shadow-title/70 rounded-3xl px-4 md:px-5 py-1 md:py-2 text-sm sm:text-base hover:shadow-title/90  font-medium'>Apply Now</button>
                         </Link>
                     </div>
 
@@ -71,9 +67,9 @@ const Navbar = () => {
                                 <p>Global Exposure</p>
                             </Link>
                         </div>
-                        <div className="cta">
+                        <div className="cta ">
                             <Link to="/apply">
-                                <button className='bg-[#bced00] shadow-[0px_0px_10px_2px] shadow-title text-black  rounded-3xl px-5 py-2 text-sm sm:text-base font-medium'>Apply Now</button>
+                                <button className='bg-[#bced00] cursor-pointer shadow-[0px_0px_10px_2px] shadow-title text-black  rounded-3xl px-5 py-2 text-sm sm:text-base font-medium'>Apply Now</button>
                             </Link>
                         </div>
 

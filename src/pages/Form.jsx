@@ -151,7 +151,7 @@ const Form = () => {
                                             type="button"
                                             key={item}
                                             onClick={() => bgChange(item)}
-                                            className={`rounded-xl relative overflow-hidden px-4 py-3 text-sm bg-[#2a2a2a] transition-all duration-100 ${formData.background === item
+                                            className={`rounded-xl relative overflow-hidden cursor-pointer px-4 py-3 text-sm bg-[#2a2a2a] transition-all duration-100 ${formData.background === item
                                                 ? "border-title border text-title font-semibold"
                                                 : " text-gray-400 border border-transparent"
                                                 }`}

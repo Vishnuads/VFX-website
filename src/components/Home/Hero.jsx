@@ -21,7 +21,7 @@ const Hero = () => {
                             VFX & Animation Experience studio-style training guided by top professionals.
                         </p>
                         <Link to="/apply">
-                            <button className='bg-[#bced00] rounded-3xl px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 md:py-3 text-black font-medium text-sm sm:text-base hover:bg-[#a5d400] transition-colors'>
+                            <button className='bg-[#bced00] cursor-pointer rounded-3xl px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 md:py-3 text-black font-medium text-sm sm:text-base hover:bg-[#a5d400] transition-colors'>
                                 Connect with Us
                             </button>
                         </Link>

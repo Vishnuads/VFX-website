@@ -2,11 +2,12 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import CourseBg from '../../assets/images/course1.webp'
 import { DownloadSimple } from '@phosphor-icons/react'
+import Img from '../../assets/images/hiring/8.png'
 
 
 const Hero = () => {
     return (
-        <section className='mt-15'>
+        <section className='mt-15 px-5'>
             <div className='w-full relative h-[490px] overflow-hidden'>
                 <img
                     src={CourseBg}
@@ -25,18 +26,24 @@ const Hero = () => {
                         </p>
                         <div className='flex md:gap-5 gap-3 justify-center items-center'>
                             <Link to="/apply">
-                                <button className='bg-title border border-title rounded-4xl px-5  py-2 text-black font-medium text-sm sm:text-base hover:bg-[#a5d400] transition-colors'>
+                                <button className='bg-title border cursor-pointer border-title rounded-4xl px-5  py-2 text-black font-medium text-sm sm:text-base hover:bg-[#a5d400] transition-colors'>
                                     Apply Now
                                 </button>
                             </Link>
                             <a href="../../assets/broucer.pdf" download={"One Year VFX Mastery.pdf"}>
-                                <button className='text-title border border-title group flex items-center gap-3 rounded-4xl px-5 py-2  font-medium text-sm sm:text-base hover:bg-title hover:text-black transition-colors'>
+                                <button className='text-title border cursor-pointer border-title group flex items-center gap-3 rounded-4xl px-5 py-2  font-medium text-sm sm:text-base hover:bg-title hover:text-black transition-colors'>
                                     Download Brochure <DownloadSimple size={18} className='group-hover:text-black text-title' weight="fill" />
                                 </button>
                             </a>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className="my-10 py-5 md:max-w-4xl mx-auto text-para md:flex items-center gap-5  rounded-2xl bg-black ">
+                <div className='h-full w-full flex justify-center'>
+                    <img src={Img} alt="Paul-bros" className='h-32 w-auto ' />
+                </div>
+                <p className='px-5 text-center'>Our program features exclusive partnerships with top Canadian VFX studios, offering global-standard training and studio exposure. Graduates gain hands-on experience by contributing to live feature-film VFX projects with <span className='text-white'>Paul Bros VFX Studios.</span> </p>
             </div>
         </section>
     )

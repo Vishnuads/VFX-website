@@ -76,9 +76,8 @@ const Tools = () => {
                 {toolsData.slice(0,3).map((dept, idx) => (
                     <div
                         key={idx}
-                        className="group rounded-2xl border border-white/10 bg-black backdrop-blur-md md:p-6 p-3 hover:border-lime-400/60 transition-all duration-300 hover:shadow-[0px_0px_20px_2px] shadow-title/50"
+                        className="group rounded-2xl cursor-pointer border border-white/10 bg-black backdrop-blur-md md:p-6 p-3 hover:border-lime-400/60 transition-all duration-300 hover:shadow-[0px_0px_20px_2px] shadow-title/50"
                     >
-
                         <p className="text-white  text-xl font-semibold mb-5 group-hover:text-lime-400 transition">
                             {dept.department}
                         </p>
@@ -116,7 +115,7 @@ const Tools = () => {
                 {toolsData.slice(3,6).map((dept, idx) => (
                     <div
                         key={idx}
-                        className="group rounded-2xl border border-white/10 bg-black backdrop-blur-md md:p-6 p-3 hover:border-lime-400/60 transition-all duration-300 hover:shadow-[0px_0px_20px_2px] shadow-title/50"
+                        className="group rounded-2xl cursor-pointer border border-white/10 bg-black backdrop-blur-md md:p-6 p-3 hover:border-lime-400/60 transition-all duration-300 hover:shadow-[0px_0px_20px_2px] shadow-title/50"
                     >
 
                         <p className="text-white  text-xl font-semibold mb-5 group-hover:text-lime-400 transition">

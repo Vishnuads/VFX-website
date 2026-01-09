@@ -116,7 +116,7 @@ const Footer = () => {
                                 <div className="flex items-center cursor-pointer  mt-3">
                                     <div>
                                         <EnvelopeIcon className='text-title' size={26} /></div>
-                                    <button className='text-para cursor-pointer px-3  '><p>admission@cinemafactory.co.in</p></button>
+                                    <button className='text-para hover:text-title cursor-pointer px-3  '><p>admission@cinemafactory.co.in</p></button>
 
                                 </div>
                             </Link>
@@ -124,7 +124,7 @@ const Footer = () => {
                                 <div className="flex items-center cursor-pointer  mt-3">
                                     <div>
                                         <PhoneIcon className='text-title' size={22} /></div>
-                                    <button className='text-para cursor-pointer px-3  text-sm sm:text-base font-medium'><p>98846 83888</p></button>
+                                    <button className='text-para  hover:text-title cursor-pointer px-3  text-sm sm:text-base font-medium'><p>98846 83888</p></button>
 
                                 </div>
                             </Link>

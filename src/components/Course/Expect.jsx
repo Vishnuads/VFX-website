@@ -26,7 +26,7 @@ const Expect = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 my-10">
                     {data.slice(0, 3).map((d, idx) => (
-                        <div className="relative w-full h-80 group transition-all duration-500 ease-in-out" key={idx}>
+                        <div className="relative cursor-pointer w-full h-80 group transition-all duration-500 ease-in-out" key={idx}>
 
                             <img
                                 src={d.img}

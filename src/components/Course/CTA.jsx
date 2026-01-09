@@ -38,7 +38,7 @@ const CTA = () => {
               </button>
             </Link>
             <a href="../../assets/broucer.pdf" download={"One Year VFX Mastery.pdf"}>
-              <button className="px-5 py-2 rounded-full border border-title text-title font-semibold flex items-center gap-2 hover:bg-title hover:text-black transition">
+              <button className="px-5 py-2 rounded-full border cursor-pointer border-title text-title font-semibold flex items-center gap-2 hover:bg-title hover:text-black transition">
                 Download Brochure
                 <Download />
               </button>

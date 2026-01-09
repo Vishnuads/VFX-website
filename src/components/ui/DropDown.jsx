@@ -34,7 +34,7 @@ const Dropdown = ({ title, items }) => {
       {/* Dropdown menu */}
       <div
         className={`
-          md:absolute md:top-full md:left-0 md:mt-3 md:w-44 w-full mt-2 rounded-xl bg-black shadow-md overflow-hidden transition-all duration-300 ${open ? "max-h-60 opacity-100" : "max-h-0 opacity-0"} `}
+          md:absolute md:top-full md:left-0 md:mt-3 md:w-50 w-full mt-2 rounded-xl bg-black shadow-md overflow-hidden transition-all duration-300 ${open ? "max-h-60 opacity-100" : "max-h-0 opacity-0"} `}
       >
         <div className="p-2 space-y-1">
           {items.map((item, index) => (
