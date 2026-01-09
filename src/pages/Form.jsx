@@ -81,7 +81,7 @@ const Form = () => {
                     <p className='text-para'>Get personalized guidance on the right VFX path, skills, and next steps.</p>
                 </div>
 
-                <div className="relative  grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div className="relative  grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
                     {/* LEFT CARD */}
                     <div className="relative rounded-3xl overflow-hidden h-full">
                         <img className="absolute inset-0 w-full h-full object-cover" src={Img} />
