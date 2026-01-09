@@ -29,7 +29,7 @@ const Hero = () => {
                                     Apply Now
                                 </button>
                             </Link>
-                            <a href="">
+                            <a href="../../assets/broucer.pdf" download={"One Year VFX Mastery.pdf"}>
                                 <button className='text-title border border-title group flex items-center gap-3 rounded-4xl px-5 py-2  font-medium text-sm sm:text-base hover:bg-title hover:text-black transition-colors'>
                                     Download Brochure <DownloadSimple size={18} className='group-hover:text-black text-title' weight="fill" />
                                 </button>

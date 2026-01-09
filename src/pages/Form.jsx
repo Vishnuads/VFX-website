@@ -2,6 +2,7 @@ import Footer from "@/components/Home/Footer";
 import Navbar from "@/components/Home/Navbar";
 import React, { useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
+import Img from '../assets/images/Bangkok/(20).jpeg'
 
 const Form = () => {
 
@@ -65,8 +66,6 @@ const Form = () => {
 
     }
 
-
-
     return (
         <>
             <Navbar />
@@ -85,14 +84,14 @@ const Form = () => {
                 <div className="relative  grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     {/* LEFT CARD */}
                     <div className="relative rounded-3xl overflow-hidden h-full">
-                        <div className="absolute inset-0 bg-linear-to-br from-title/80 via-title to-black" />
-                        <div className="absolute inset-0 bg-black/50" />
+                        <img className="absolute inset-0 w-full h-full object-cover" src={Img} />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
 
                         <div className="relative h-full flex items-end p-10">
-                            <h2 className="md:text-4xl text-3xl lg:text-5xl font-bold text-white leading-tight">
+                            <h2 className="md:text-4xl text-3xl lg:text-5xl font-bold text-title leading-tight">
                                 Your Vision. <br />
                                 Your Skills. <br />
-                                <span className="text-white/80">Your VFX Career.</span>
+                                <span className="text-title">Your VFX Career.</span>
                             </h2>
                         </div>
                     </div>
@@ -169,9 +168,9 @@ const Form = () => {
                             <button
                                 type="submit"
                                 disabled={loading}
-                                className="w-full mt-4 rounded-xl bg-title py-4 text-black font-bold hover:bg-title/70 cursor-pointer transition-all duration-300"
+                                className="w-full mt-4 rounded-xl bg-title py-4 text-black font-semibold hover:bg-title/70 cursor-pointer transition-all duration-300"
                             >
-                                {loading ? "Booking..." : "Book Free Career Consultation"}
+                                {loading ? "Booking..." : "Book Free Consultation"}
 
                             </button>
                         </form>

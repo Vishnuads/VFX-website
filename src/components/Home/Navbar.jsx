@@ -16,7 +16,7 @@ const Navbar = () => {
         setIsOpen(!isOpen)
     };
     const programs =[
-        {label: "1yr VFX Mastery", link: "/course"},
+        {label: "One Year VFX Mastery", link: "/course"},
         // {label: "Shot Term", link: "/short-term"}
     ]
 

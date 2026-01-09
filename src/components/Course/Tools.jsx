@@ -11,11 +11,8 @@ import Equalizer from "../../assets/images/tools/3d.png";
 
 const toolsData = [
     {
-        department: "Roto",
-        softwares: [
-            { name: "SilhouetteFX", logo: Silhouette },
-            { name: "Nuke", logo: Nuke },
-        ],
+        department: "Compositing",
+        softwares: [{ name: "Nuke", logo: Nuke }],
     },
     {
         department: "Prep & Paint",
@@ -24,24 +21,26 @@ const toolsData = [
             { name: "Photoshop", logo: Photoshop },
         ],
     },
-     {
-        department: "3D",
-        softwares: [
-            { name: "Unreal Engine", logo: Unreal },
-            { name: "Maya", logo: Maya },
-        ],
-    },
-    {
-        department: "Compositing",
-        softwares: [{ name: "Nuke", logo: Nuke }],
-    },
-  
-     {
+        {
         department: "Matchmove",
         softwares: [
             { name: "3D Equalizer", logo: Equalizer },
             { name: "Maya", logo: Maya },
             { name: "Unreal Engine", logo: Unreal },
+        ],
+    },
+    {
+        department: "Roto",
+        softwares: [
+            { name: "SilhouetteFX", logo: Silhouette },
+            { name: "Nuke", logo: Nuke },
+        ],
+    },
+     {
+        department: "3D",
+        softwares: [
+            { name: "Unreal Engine", logo: Unreal },
+            { name: "Maya", logo: Maya },
         ],
     },
     {
@@ -53,15 +52,6 @@ const toolsData = [
     },
 ];
 
-const logos = [
-    { img: Nuke, name: "Nuke", department: ["Roto", "Composting", "Prep & paint"] },
-    { img: Silhouette, name: "Silhouette", department: ["Roto"] },
-    { img: Unreal, name: "Unreal Engine", department: ["Matchmove", "FX", "3D"] },
-    { img: Houdini, name: " Houdini", department: ["FX"] },
-    { img: Equalizer, name: " 3D Equalizer", department: ["Matchmove"] },
-    { img: Maya, name: "Maya", department: ["Matchmove", "3D"] },
-    { img: Photoshop, name: "Photoshop", department: [" Prep & paint"] },
-    ,];
 
 const Tools = () => {
     return (
@@ -82,11 +72,11 @@ const Tools = () => {
             </div>
 
             {/* Cards Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                {toolsData.slice(0,4).map((dept, idx) => (
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {toolsData.slice(0,3).map((dept, idx) => (
                     <div
                         key={idx}
-                        className="group rounded-2xl border border-white/10 bg-black backdrop-blur-md p-6 hover:border-lime-400/60 transition-all duration-300 hover:shadow-[0px_0px_20px_2px] shadow-title/50"
+                        className="group rounded-2xl border border-white/10 bg-black backdrop-blur-md md:p-6 p-3 hover:border-lime-400/60 transition-all duration-300 hover:shadow-[0px_0px_20px_2px] shadow-title/50"
                     >
 
                         <p className="text-white  text-xl font-semibold mb-5 group-hover:text-lime-400 transition">
@@ -122,11 +112,11 @@ const Tools = () => {
                     </div>
                 ))} */}
             </div>
-             <div className="grid grid-cols-1 md:grid-cols-2 max-w-3xl mx-auto gap-4  my-5">
-                {toolsData.slice(4,6).map((dept, idx) => (
+             <div className="grid grid-cols-1 md:grid-cols-3  gap-4  my-5">
+                {toolsData.slice(3,6).map((dept, idx) => (
                     <div
                         key={idx}
-                        className="group rounded-2xl border border-white/10 bg-black backdrop-blur-md p-6 hover:border-lime-400/60 transition-all duration-300 hover:shadow-[0px_0px_20px_2px] shadow-title/50"
+                        className="group rounded-2xl border border-white/10 bg-black backdrop-blur-md md:p-6 p-3 hover:border-lime-400/60 transition-all duration-300 hover:shadow-[0px_0px_20px_2px] shadow-title/50"
                     >
 
                         <p className="text-white  text-xl font-semibold mb-5 group-hover:text-lime-400 transition">

@@ -9,8 +9,6 @@ import Img5 from '../../assets/images/about/(77).jpeg'
 import Img6 from '../../assets/images/about/(79).jpeg'
 import Img7 from '../../assets/images/about/(81).jpeg'
 
-
-
 const AboutSection = () => {
 
   const images = [Img1, Img2, Img3, Img4, Img5, Img6, Img7]
