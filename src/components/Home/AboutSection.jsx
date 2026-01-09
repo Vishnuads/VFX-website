@@ -1,9 +1,5 @@
 import React from 'react'
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-} from "@/components/ui/carousel"
+import { Carousel, CarouselContent, CarouselItem } from "@/components/ui/carousel"
 import Autoplay from "embla-carousel-autoplay"
 import Img1 from '../../assets/images/about/(60).jpeg'
 import Img2 from '../../assets/images/about/(63).jpeg'
