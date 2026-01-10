@@ -1,6 +1,6 @@
 import React from 'react'
 import logo from '../../assets/images/CFA-logo.png'
-import { InstagramLogo, LinkedinLogo, YoutubeLogo, FacebookLogo, EnvelopeIcon, MapPinAreaIcon } from '@phosphor-icons/react'
+import { InstagramLogo, LinkedinLogo, YoutubeLogo, FacebookLogo, EnvelopeIcon, MapPinAreaIcon, InstagramLogoIcon } from '@phosphor-icons/react'
 import M1 from '../../assets/images/mentors/m1.jpg'
 import M2 from '../../assets/images/mentors/m2.jpg'
 import M3 from '../../assets/images/mentors/m3.jpg'
@@ -116,7 +116,7 @@ const Footer = () => {
                                 <div className="flex items-center cursor-pointer  mt-3">
                                     <div>
                                         <EnvelopeIcon className='text-title' size={26} /></div>
-                                    <button className='text-para hover:text-title cursor-pointer px-3 font-medium '><p>admission@cinemafactory.co.in</p></button>
+                                    <p className='text-para text-lg hover:text-title cursor-pointer px-3 '>admission@cinemafactory.co.in</p>
 
                                 </div>
                             </Link>
@@ -124,18 +124,27 @@ const Footer = () => {
                                 <div className="flex items-center cursor-pointer  mt-3">
                                     <div>
                                         <PhoneIcon className='text-title' size={22} /></div>
-                                    <button className='text-para  hover:text-title cursor-pointer px-3 font-medium'><p>98846 83888</p></button>
+                                    <button className='text-para  hover:text-title cursor-pointer px-3 '><p>98846 83888</p></button>
+
+                                </div>
+                            </Link>
+
+                             <Link to="https://www.instagram.com/cfa_vfx/" target="_blank" >
+                                <div className="flex items-center cursor-pointer  mt-3">
+                                    <div>
+                                        <InstagramLogoIcon className='text-title' size={26} /></div>
+                                    <button className='text-para  hover:text-title cursor-pointer px-3 '><p>cfa_vfx</p></button>
 
                                 </div>
                             </Link>
 
                             {/* <p className='text-para text-xs my-2'>By subscribing, you agree to receive emails from Cinema Factory Academy. You can unsubscribe at any time. Read our <span className='text-title'>Privacy Policy</span>  to learn how we protect your data.</p> */}
-                            <div className="flex items-center gap-3 my-5">
+                            {/* <div className="flex items-center gap-3 my-5">
                                 <InstagramLogo size={32} color="#ffffff" weight="fill" />
                                 <LinkedinLogo size={32} color="#ffffff" weight="fill" />
                                 <YoutubeLogo size={32} color="#ffffff" weight="fill" />
                                 <FacebookLogo size={32} color="#ffffff" weight="fill" />
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </footer>

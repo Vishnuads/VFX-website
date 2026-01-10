@@ -7,7 +7,7 @@ import Img from '../../assets/images/hiring/8.png'
 
 const Hero = () => {
     return (
-        <section className='mt-15 px-5'>
+        <section className='mt-15 '>
             <div className='w-full relative h-[490px] overflow-hidden'>
                 <img
                     src={CourseBg}
@@ -39,7 +39,7 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            <div className="my-10 py-5 md:max-w-4xl mx-auto text-para md:flex items-center gap-5  rounded-2xl bg-black ">
+            <div className="my-10 py-5 md:max-w-4xl md:mx-auto mx-5 text-para md:flex items-center gap-5  rounded-2xl bg-black ">
                 <div className='h-full w-full flex justify-center'>
                     <img src={Img} alt="Paul-bros" className='h-32 w-auto ' />
                 </div>

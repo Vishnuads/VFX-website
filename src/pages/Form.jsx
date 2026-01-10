@@ -83,12 +83,12 @@ const Form = () => {
 
                 <div className="relative  grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
                     {/* LEFT CARD */}
-                    <div className="relative rounded-3xl overflow-hidden h-full">
-                        <img className="absolute inset-0 w-full h-full object-cover" src={Img} />
+                    <div className="relative rounded-3xl overflow-hidden h-70 md:h-full">
+                        <img className="absolute inset-0 w-full h-100 md:h-full object-cover" src={Img} />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
 
-                        <div className="relative h-full flex items-end p-10">
-                            <h2 className="md:text-4xl text-3xl lg:text-5xl font-bold text-title leading-tight">
+                        <div className="relative h-full flex items-end md:p-10 p-5">
+                            <h2 className="md:text-4xl text-2xl lg:text-5xl font-bold text-title leading-tight">
                                 Your Vision. <br />
                                 Your Skills. <br />
                                 <span className="text-title">Your VFX Career.</span>
