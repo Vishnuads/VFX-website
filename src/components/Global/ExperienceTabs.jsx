@@ -50,7 +50,7 @@ export default function ExperienceTabs() {
           <button
             key={tab.key}
             onClick={() => setActiveTab(tab.key)}
-            className={`px-3 py-2   text-sm md:text-base font-medium transition
+            className={`px-3 py-2 cursor-pointer  text-sm md:text-base font-medium transition
               ${activeTab === tab.key
                 ? "border-title border-b-2 text-title"
                 : "text-white"

@@ -1,5 +1,5 @@
 import React from 'react'
-import Mentor1 from '../../assets/images/mentor/11.png'
+import Mentor1 from '../../assets/images/mentor/RP-bg.png'
 import Mentor2 from '../../assets/images/mentor/22.png'
 import Mentor3 from '../../assets/images/mentor/10.png'
 import Mentor4 from '../../assets/images/mentor/44.png'
@@ -53,7 +53,7 @@ const Who = () => {
                 <div className='grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6 my-10 px-4'>
                     {data.map((item, index) => (
                         <div className=' rounded-2xl  text-center mb-3 p-5' key={index}>
-                            <div className='bg-linear-to-b relative from-title via-title/20 to-transparent w-full h-[full] rounded-xl'>
+                            <div className='bg-linear-to-b relative from-title via-title/60 to-transparent w-full h-[full] rounded-xl'>
                                 <img src={item.img} alt="image" className='w-auto h-70 mx-auto object-cover' />
                                 <div className="absolute inset-0 bg-linear-to-t from-[#141414] via-[#141414]/10
                                  to-transparent"></div>
